@@ -1,0 +1,6036 @@
+{
+  "nodes": [
+    {
+      "id": "bio-001",
+      "label": "White Blood Cells",
+      "type": "biomarker",
+      "group": "Hematology",
+      "description": "Cells of the immune system involved in protecting the body against infectious disease and foreign invaders."
+    },
+    {
+      "id": "bio-002",
+      "label": "RBC",
+      "type": "biomarker",
+      "group": "Hematology",
+      "description": "Red Blood Cells carry oxygen from the lungs to the rest of the body."
+    },
+    {
+      "id": "bio-003",
+      "label": "Hemoglobin",
+      "type": "biomarker",
+      "group": "Hematology",
+      "description": "A protein in red blood cells that carries oxygen to organs and tissues."
+    },
+    {
+      "id": "bio-004",
+      "label": "Hematocrit",
+      "type": "biomarker",
+      "group": "Hematology",
+      "description": "The proportion of red blood cells in your blood."
+    },
+    {
+      "id": "bio-005",
+      "label": "MCV",
+      "type": "biomarker",
+      "group": "Hematology",
+      "description": "Mean Corpuscular Volume measures the average size of red blood cells."
+    },
+    {
+      "id": "bio-006",
+      "label": "Platelets",
+      "type": "biomarker",
+      "group": "Hematology",
+      "description": "Small blood cells that help your body form clots to stop bleeding."
+    },
+    {
+      "id": "bio-007",
+      "label": "Neutrophils %",
+      "type": "biomarker",
+      "group": "Immune",
+      "description": "Percentage of neutrophils, the most common white blood cell type."
+    },
+    {
+      "id": "bio-008",
+      "label": "Lymphocytes %",
+      "type": "biomarker",
+      "group": "Immune",
+      "description": "Percentage of lymphocytes (T-cells, B-cells), crucial for immune response."
+    },
+    {
+      "id": "bio-009",
+      "label": "Absolute Neutrophils",
+      "type": "biomarker",
+      "group": "Immune",
+      "description": "Absolute number of neutrophils per microliter of blood."
+    },
+    {
+      "id": "bio-010",
+      "label": "Glucose (Fasting)",
+      "type": "biomarker",
+      "group": "Metabolic",
+      "description": "Blood sugar level, the body's primary source of energy."
+    },
+    {
+      "id": "bio-011",
+      "label": "Hemoglobin A1C",
+      "type": "biomarker",
+      "group": "Metabolic",
+      "description": "Average blood sugar level over the past 2-3 months."
+    },
+    {
+      "id": "bio-012",
+      "label": "Insulin (Fasting)",
+      "type": "biomarker",
+      "group": "Metabolic",
+      "description": "Hormone that regulates blood sugar; elevated levels indicate insulin resistance."
+    },
+    {
+      "id": "bio-013",
+      "label": "HOMA-IR",
+      "type": "biomarker",
+      "group": "Metabolic",
+      "description": "Homeostatic Model Assessment for Insulin Resistance."
+    },
+    {
+      "id": "bio-014",
+      "label": "BUN",
+      "type": "biomarker",
+      "group": "Kidney",
+      "description": "Blood Urea Nitrogen, a waste product indicating kidney function."
+    },
+    {
+      "id": "bio-015",
+      "label": "Creatinine",
+      "type": "biomarker",
+      "group": "Kidney",
+      "description": "A chemical waste product used to assess kidney function."
+    },
+    {
+      "id": "bio-016",
+      "label": "eGFR",
+      "type": "biomarker",
+      "group": "Kidney",
+      "description": "Estimated Glomerular Filtration Rate, the best test of kidney function."
+    },
+    {
+      "id": "bio-017",
+      "label": "Uric Acid",
+      "type": "biomarker",
+      "group": "Kidney",
+      "description": "A waste product from purine breakdown; high levels cause gout."
+    },
+    {
+      "id": "bio-018",
+      "label": "Sodium",
+      "type": "biomarker",
+      "group": "Electrolytes",
+      "description": "Essential electrolyte that helps maintain fluid balance."
+    },
+    {
+      "id": "bio-019",
+      "label": "Potassium",
+      "type": "biomarker",
+      "group": "Electrolytes",
+      "description": "An essential mineral that helps nerves and muscles communicate."
+    },
+    {
+      "id": "bio-020",
+      "label": "Calcium",
+      "type": "biomarker",
+      "group": "Bone/Mineral",
+      "description": "A mineral vital for healthy bones, teeth, muscle, and nerve function."
+    },
+    {
+      "id": "bio-021",
+      "label": "Magnesium",
+      "type": "biomarker",
+      "group": "Minerals",
+      "description": "Important for muscle/nerve function, blood glucose control, and blood pressure."
+    },
+    {
+      "id": "bio-022",
+      "label": "Phosphorus",
+      "type": "biomarker",
+      "group": "Minerals",
+      "description": "Works with calcium to build strong bones and teeth."
+    },
+    {
+      "id": "bio-023",
+      "label": "Iron (Serum)",
+      "type": "biomarker",
+      "group": "Minerals",
+      "description": "Essential mineral for hemoglobin production and oxygen transport."
+    },
+    {
+      "id": "bio-024",
+      "label": "Zinc",
+      "type": "biomarker",
+      "group": "Minerals",
+      "description": "Essential for immune function, wound healing, and DNA synthesis."
+    },
+    {
+      "id": "bio-025",
+      "label": "ALT (SGPT)",
+      "type": "biomarker",
+      "group": "Liver",
+      "description": "Alanine Aminotransferase, an enzyme found mainly in the liver."
+    },
+    {
+      "id": "bio-026",
+      "label": "AST (SGOT)",
+      "type": "biomarker",
+      "group": "Liver",
+      "description": "Aspartate Aminotransferase, found in the liver and muscles."
+    },
+    {
+      "id": "bio-027",
+      "label": "Alkaline Phosphatase",
+      "type": "biomarker",
+      "group": "Liver",
+      "description": "An enzyme related to bile ducts; increased when blocked."
+    },
+    {
+      "id": "bio-028",
+      "label": "Bilirubin Total",
+      "type": "biomarker",
+      "group": "Liver",
+      "description": "A yellowish pigment found in bile, produced by the liver."
+    },
+    {
+      "id": "bio-029",
+      "label": "GGT",
+      "type": "biomarker",
+      "group": "Liver",
+      "description": "Gamma-Glutamyl Transferase, elevated in liver/bile duct disease."
+    },
+    {
+      "id": "bio-030",
+      "label": "Albumin",
+      "type": "biomarker",
+      "group": "Liver",
+      "description": "A protein made by the liver; indicates nutritional status."
+    },
+    {
+      "id": "bio-031",
+      "label": "Total Cholesterol",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "Total amount of cholesterol in the blood."
+    },
+    {
+      "id": "bio-032",
+      "label": "LDL Cholesterol",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "Low-Density Lipoprotein, often called 'bad' cholesterol."
+    },
+    {
+      "id": "bio-033",
+      "label": "HDL Cholesterol",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "High-Density Lipoprotein, often called 'good' cholesterol."
+    },
+    {
+      "id": "bio-034",
+      "label": "Triglycerides",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "A type of fat (lipid) found in your blood."
+    },
+    {
+      "id": "bio-035",
+      "label": "VLDL",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "Very Low-Density Lipoprotein, carries triglycerides."
+    },
+    {
+      "id": "bio-036",
+      "label": "Lp(a)",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "Lipoprotein(a), a genetic risk factor for cardiovascular disease."
+    },
+    {
+      "id": "bio-037",
+      "label": "ApoB",
+      "type": "biomarker",
+      "group": "Lipids",
+      "description": "Apolipoprotein B, the primary protein in LDL particles."
+    },
+    {
+      "id": "bio-038",
+      "label": "CRP (hs-CRP)",
+      "type": "biomarker",
+      "group": "Inflammation",
+      "description": "High-sensitivity C-Reactive Protein, a key marker of systemic inflammation."
+    },
+    {
+      "id": "bio-039",
+      "label": "ESR",
+      "type": "biomarker",
+      "group": "Inflammation",
+      "description": "Erythrocyte Sedimentation Rate, a non-specific marker of inflammation."
+    },
+    {
+      "id": "bio-040",
+      "label": "IL-6",
+      "type": "biomarker",
+      "group": "Inflammation",
+      "description": "Interleukin-6, a pro-inflammatory cytokine."
+    },
+    {
+      "id": "bio-041",
+      "label": "TNF-alpha",
+      "type": "biomarker",
+      "group": "Inflammation",
+      "description": "Tumor Necrosis Factor alpha, a pro-inflammatory cytokine."
+    },
+    {
+      "id": "bio-042",
+      "label": "Homocysteine",
+      "type": "biomarker",
+      "group": "Inflammation",
+      "description": "An amino acid; high levels linked to heart disease and inflammation."
+    },
+    {
+      "id": "bio-043",
+      "label": "Blood Pressure (Systolic)",
+      "type": "biomarker",
+      "group": "Cardiovascular",
+      "description": "The pressure when your heart beats (top number)."
+    },
+    {
+      "id": "bio-044",
+      "label": "Blood Pressure (Diastolic)",
+      "type": "biomarker",
+      "group": "Cardiovascular",
+      "description": "The pressure between heartbeats (bottom number)."
+    },
+    {
+      "id": "bio-045",
+      "label": "Omega-3 Index",
+      "type": "biomarker",
+      "group": "Cardiovascular",
+      "description": "Percentage of EPA+DHA in red blood cell membranes."
+    },
+    {
+      "id": "bio-046",
+      "label": "Fibrinogen",
+      "type": "biomarker",
+      "group": "Cardiovascular",
+      "description": "A protein essential for blood clot formation."
+    },
+    {
+      "id": "bio-047",
+      "label": "TSH",
+      "type": "biomarker",
+      "group": "Thyroid",
+      "description": "Thyroid Stimulating Hormone, controls thyroid gland activity."
+    },
+    {
+      "id": "bio-048",
+      "label": "Free T4",
+      "type": "biomarker",
+      "group": "Thyroid",
+      "description": "Free thyroxine, the active form of thyroid hormone."
+    },
+    {
+      "id": "bio-049",
+      "label": "Free T3",
+      "type": "biomarker",
+      "group": "Thyroid",
+      "description": "Free triiodothyronine, the most active thyroid hormone."
+    },
+    {
+      "id": "bio-050",
+      "label": "Vitamin D (25-OH)",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Indicator of Vitamin D stores; crucial for bone and immune health."
+    },
+    {
+      "id": "bio-051",
+      "label": "Vitamin B12",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Essential for nerve tissue health, brain function, and red blood cells."
+    },
+    {
+      "id": "bio-052",
+      "label": "Folate",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Vital for making red blood cells and for DNA synthesis."
+    },
+    {
+      "id": "bio-053",
+      "label": "Vitamin A (Retinol)",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Essential for vision, immune function, and skin health."
+    },
+    {
+      "id": "bio-054",
+      "label": "Vitamin C",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Powerful antioxidant important for immune function and collagen synthesis."
+    },
+    {
+      "id": "bio-055",
+      "label": "Vitamin E",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Fat-soluble antioxidant protecting cells from oxidative damage."
+    },
+    {
+      "id": "bio-056",
+      "label": "Vitamin K",
+      "type": "biomarker",
+      "group": "Vitamins",
+      "description": "Essential for blood clotting and bone metabolism."
+    },
+    {
+      "id": "bio-057",
+      "label": "Cortisol",
+      "type": "biomarker",
+      "group": "Hormones",
+      "description": "The primary stress hormone produced by the adrenal glands."
+    },
+    {
+      "id": "bio-058",
+      "label": "Testosterone",
+      "type": "biomarker",
+      "group": "Hormones",
+      "description": "Primary male sex hormone, also important in females."
+    },
+    {
+      "id": "bio-059",
+      "label": "Estradiol",
+      "type": "biomarker",
+      "group": "Hormones",
+      "description": "The strongest form of estrogen, important for reproductive health."
+    },
+    {
+      "id": "bio-060",
+      "label": "DHEA-S",
+      "type": "biomarker",
+      "group": "Hormones",
+      "description": "A hormone produced by the adrenal glands, a precursor to sex hormones."
+    },
+    {
+      "id": "bio-061",
+      "label": "Ferritin",
+      "type": "biomarker",
+      "group": "Iron/Anemia",
+      "description": "A blood protein that stores iron; best indicator of iron stores."
+    },
+    {
+      "id": "bio-062",
+      "label": "TIBC",
+      "type": "biomarker",
+      "group": "Iron/Anemia",
+      "description": "Total Iron-Binding Capacity, measures transferrin availability."
+    },
+    {
+      "id": "bio-063",
+      "label": "Total Protein",
+      "type": "biomarker",
+      "group": "General Health",
+      "description": "Total albumin and globulin in blood."
+    },
+    {
+      "id": "bio-064",
+      "label": "Globulin",
+      "type": "biomarker",
+      "group": "General Health",
+      "description": "Proteins made by the liver and immune system."
+    },
+    {
+      "id": "food-001",
+      "label": "Oats",
+      "type": "food",
+      "group": "Grains"
+    },
+    {
+      "id": "food-002",
+      "label": "Quinoa",
+      "type": "food",
+      "group": "Grains"
+    },
+    {
+      "id": "food-003",
+      "label": "Brown Rice",
+      "type": "food",
+      "group": "Grains"
+    },
+    {
+      "id": "food-004",
+      "label": "Barley",
+      "type": "food",
+      "group": "Grains"
+    },
+    {
+      "id": "food-005",
+      "label": "Salmon",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-006",
+      "label": "Sardines",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-007",
+      "label": "Mackerel",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-008",
+      "label": "Chicken Breast",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-009",
+      "label": "Eggs",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-010",
+      "label": "Lean Beef",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-011",
+      "label": "Turkey",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-012",
+      "label": "Oysters",
+      "type": "food",
+      "group": "Seafood"
+    },
+    {
+      "id": "food-013",
+      "label": "Shrimp",
+      "type": "food",
+      "group": "Seafood"
+    },
+    {
+      "id": "food-014",
+      "label": "Tofu",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-015",
+      "label": "Liver (Beef)",
+      "type": "food",
+      "group": "Organ Meats"
+    },
+    {
+      "id": "food-016",
+      "label": "Blueberries",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-017",
+      "label": "Oranges",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-018",
+      "label": "Bananas",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-019",
+      "label": "Pomegranate",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-020",
+      "label": "Avocado",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-021",
+      "label": "Strawberries",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-022",
+      "label": "Tart Cherries",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-023",
+      "label": "Kiwi",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-024",
+      "label": "Apples",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-025",
+      "label": "Spinach",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-026",
+      "label": "Kale",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-027",
+      "label": "Broccoli",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-028",
+      "label": "Sweet Potato",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-029",
+      "label": "Carrots",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-030",
+      "label": "Beetroot",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-031",
+      "label": "Garlic",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-032",
+      "label": "Tomatoes",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-033",
+      "label": "Bell Peppers",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-034",
+      "label": "Brussels Sprouts",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-035",
+      "label": "Asparagus",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-036",
+      "label": "Mushrooms (Shiitake)",
+      "type": "food",
+      "group": "Vegetables"
+    },
+    {
+      "id": "food-037",
+      "label": "Walnuts",
+      "type": "food",
+      "group": "Nuts"
+    },
+    {
+      "id": "food-038",
+      "label": "Almonds",
+      "type": "food",
+      "group": "Nuts"
+    },
+    {
+      "id": "food-039",
+      "label": "Brazil Nuts",
+      "type": "food",
+      "group": "Nuts"
+    },
+    {
+      "id": "food-040",
+      "label": "Chia Seeds",
+      "type": "food",
+      "group": "Seeds"
+    },
+    {
+      "id": "food-041",
+      "label": "Flaxseeds",
+      "type": "food",
+      "group": "Seeds"
+    },
+    {
+      "id": "food-042",
+      "label": "Pumpkin Seeds",
+      "type": "food",
+      "group": "Seeds"
+    },
+    {
+      "id": "food-043",
+      "label": "Sunflower Seeds",
+      "type": "food",
+      "group": "Seeds"
+    },
+    {
+      "id": "food-044",
+      "label": "Lentils",
+      "type": "food",
+      "group": "Legumes"
+    },
+    {
+      "id": "food-045",
+      "label": "Black Beans",
+      "type": "food",
+      "group": "Legumes"
+    },
+    {
+      "id": "food-046",
+      "label": "Chickpeas",
+      "type": "food",
+      "group": "Legumes"
+    },
+    {
+      "id": "food-047",
+      "label": "Yogurt (Greek)",
+      "type": "food",
+      "group": "Dairy"
+    },
+    {
+      "id": "food-048",
+      "label": "Kefir",
+      "type": "food",
+      "group": "Dairy"
+    },
+    {
+      "id": "food-049",
+      "label": "Kimchi",
+      "type": "food",
+      "group": "Fermented"
+    },
+    {
+      "id": "food-050",
+      "label": "Sauerkraut",
+      "type": "food",
+      "group": "Fermented"
+    },
+    {
+      "id": "food-051",
+      "label": "Olive Oil (EVOO)",
+      "type": "food",
+      "group": "Fats"
+    },
+    {
+      "id": "food-052",
+      "label": "Coconut Oil",
+      "type": "food",
+      "group": "Fats"
+    },
+    {
+      "id": "food-053",
+      "label": "Turmeric",
+      "type": "food",
+      "group": "Spices"
+    },
+    {
+      "id": "food-054",
+      "label": "Ginger",
+      "type": "food",
+      "group": "Spices"
+    },
+    {
+      "id": "food-055",
+      "label": "Cinnamon",
+      "type": "food",
+      "group": "Spices"
+    },
+    {
+      "id": "food-056",
+      "label": "Rosemary",
+      "type": "food",
+      "group": "Herbs"
+    },
+    {
+      "id": "food-057",
+      "label": "Saffron",
+      "type": "food",
+      "group": "Spices"
+    },
+    {
+      "id": "food-058",
+      "label": "Green Tea",
+      "type": "food",
+      "group": "Beverages"
+    },
+    {
+      "id": "food-059",
+      "label": "Coffee",
+      "type": "food",
+      "group": "Beverages"
+    },
+    {
+      "id": "food-060",
+      "label": "Water",
+      "type": "food",
+      "group": "Beverages"
+    },
+    {
+      "id": "food-061",
+      "label": "Hibiscus Tea",
+      "type": "food",
+      "group": "Beverages"
+    },
+    {
+      "id": "food-062",
+      "label": "Dark Chocolate (85%+)",
+      "type": "food",
+      "group": "Treats"
+    },
+    {
+      "id": "food-063",
+      "label": "Apple Cider Vinegar",
+      "type": "food",
+      "group": "Condiments"
+    },
+    {
+      "id": "food-064",
+      "label": "Cod Liver Oil",
+      "type": "food",
+      "group": "Supplements"
+    },
+    {
+      "id": "food-065",
+      "label": "Bone Broth",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-066",
+      "label": "Seaweed (Kelp)",
+      "type": "food",
+      "group": "Sea Vegetables"
+    },
+    {
+      "id": "food-067",
+      "label": "Mango",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-068",
+      "label": "Pineapple",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-069",
+      "label": "Edamame",
+      "type": "food",
+      "group": "Legumes"
+    },
+    {
+      "id": "food-070",
+      "label": "Tempeh",
+      "type": "food",
+      "group": "Fermented"
+    },
+    {
+      "id": "food-071",
+      "label": "Salmon Roe",
+      "type": "food",
+      "group": "Seafood"
+    },
+    {
+      "id": "food-072",
+      "label": "Whey Protein",
+      "type": "food",
+      "group": "Supplements"
+    },
+    {
+      "id": "food-073",
+      "label": "Maca Root",
+      "type": "food",
+      "group": "Supplements"
+    },
+    {
+      "id": "food-074",
+      "label": "Ashwagandha",
+      "type": "food",
+      "group": "Supplements"
+    },
+    {
+      "id": "food-075",
+      "label": "Red Wine (moderate)",
+      "type": "food",
+      "group": "Beverages"
+    },
+    {
+      "id": "food-076",
+      "label": "Cranberries",
+      "type": "food",
+      "group": "Fruits"
+    },
+    {
+      "id": "food-077",
+      "label": "Flank Steak",
+      "type": "food",
+      "group": "Protein"
+    },
+    {
+      "id": "food-078",
+      "label": "Natto",
+      "type": "food",
+      "group": "Fermented"
+    },
+    {
+      "id": "food-079",
+      "label": "Moringa",
+      "type": "food",
+      "group": "Supplements"
+    },
+    {
+      "id": "food-080",
+      "label": "Matcha",
+      "type": "food",
+      "group": "Beverages"
+    },
+    {
+      "id": "food-081",
+      "label": "Anchovies",
+      "type": "food",
+      "group": "Seafood",
+      "description": "Small oily fish rich in EPA and DHA."
+    },
+    {
+      "id": "food-082",
+      "label": "Trout",
+      "type": "food",
+      "group": "Seafood",
+      "description": "Fatty fish with omega-3 fatty acids and vitamin D."
+    },
+    {
+      "id": "food-083",
+      "label": "Tuna",
+      "type": "food",
+      "group": "Seafood",
+      "description": "Lean seafood source of protein and omega-3 fats."
+    },
+    {
+      "id": "food-084",
+      "label": "Cabbage",
+      "type": "food",
+      "group": "Vegetables",
+      "description": "Cruciferous vegetable rich in vitamin C and polyphenols."
+    },
+    {
+      "id": "food-085",
+      "label": "Cauliflower",
+      "type": "food",
+      "group": "Vegetables",
+      "description": "Cruciferous vegetable with antioxidant compounds."
+    },
+    {
+      "id": "food-086",
+      "label": "Arugula",
+      "type": "food",
+      "group": "Vegetables",
+      "description": "Leafy green naturally rich in nitrates and vitamin K."
+    },
+    {
+      "id": "food-087",
+      "label": "Pistachios",
+      "type": "food",
+      "group": "Nuts",
+      "description": "Nut rich in fiber, phytosterols, and unsaturated fats."
+    },
+    {
+      "id": "food-088",
+      "label": "Cashews",
+      "type": "food",
+      "group": "Nuts",
+      "description": "Nut containing magnesium and unsaturated fats."
+    },
+    {
+      "id": "food-089",
+      "label": "Black Tea",
+      "type": "food",
+      "group": "Beverages",
+      "description": "Tea rich in theaflavins and polyphenols."
+    },
+    {
+      "id": "food-090",
+      "label": "Buckwheat",
+      "type": "food",
+      "group": "Grains",
+      "description": "Whole-grain pseudocereal with fiber and rutin."
+    },
+    {
+      "id": "food-091",
+      "label": "Olives",
+      "type": "food",
+      "group": "Fats",
+      "description": "Whole-food source of monounsaturated fats and polyphenols."
+    },
+    {
+      "id": "food-092",
+      "label": "Chamomile Tea",
+      "type": "food",
+      "group": "Beverages",
+      "description": "Herbal tea traditionally used for stress support."
+    }
+  ],
+  "links": [
+    {
+      "source": "food-001",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "5-10%",
+      "timeframe": "4-6 weeks",
+      "summary": "Beta-glucan soluble fiber in oats binds bile acids, reducing LDL cholesterol absorption.",
+      "citations": [
+        {
+          "title": "Meta-analysis of oat beta-glucan on LDL",
+          "year": 2014,
+          "doi": "10.1093/ajcn/nqu025",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-001",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "4 weeks",
+      "summary": "Soluble fiber modestly reduces triglyceride levels.",
+      "citations": [
+        {
+          "title": "Oats and cardiovascular risk factors",
+          "year": 2016,
+          "doi": "10.1017/S0007114516003354",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-001",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Post-meal",
+      "timeframe": "Immediate",
+      "summary": "Fiber slows glucose absorption, reducing postprandial spikes.",
+      "citations": [
+        {
+          "title": "Oat beta-glucan and glycemic response",
+          "year": 2013,
+          "doi": "10.1007/s00394-013-0586-0",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-001",
+      "target": "bio-011",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "0.2-0.5%",
+      "timeframe": "12 weeks",
+      "summary": "Regular oat consumption modestly improves HbA1c.",
+      "citations": [
+        {
+          "title": "Whole grains and type 2 diabetes",
+          "year": 2018,
+          "doi": "10.1136/bmj.k2716",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-002",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Low glycemic index grain with high protein content.",
+      "citations": [
+        {
+          "title": "Quinoa and metabolic health",
+          "year": 2017,
+          "doi": "10.1007/s12603-017-0870-x",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-002",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8 weeks",
+      "summary": "Fiber and healthy fats in quinoa support lipid metabolism.",
+      "citations": [
+        {
+          "title": "Quinoa and Triglycerides: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Quinoa+Triglycerides+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "15-30%",
+      "timeframe": "2-4 weeks",
+      "summary": "Omega-3 fatty acids (EPA/DHA) powerfully reduce triglycerides.",
+      "citations": [
+        {
+          "title": "Omega-3 and triglycerides meta-analysis",
+          "year": 2019,
+          "doi": "10.1016/j.atherosclerosis.2019.06.900",
+          "type": "journal"
+        },
+        {
+          "title": "Fish oil effect on plasma triglycerides",
+          "year": 2017,
+          "doi": "10.1016/j.jacl.2017.01.003",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "3-5%",
+      "timeframe": "8 weeks",
+      "summary": "Regular fatty fish consumption raises HDL cholesterol.",
+      "citations": [
+        {
+          "title": "Fish consumption and HDL cholesterol",
+          "year": 2020,
+          "doi": "10.3390/nu12030813",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~30%",
+      "timeframe": "8 weeks",
+      "summary": "EPA/DHA reduce hs-CRP levels significantly.",
+      "citations": [
+        {
+          "title": "Omega-3 and inflammatory markers",
+          "year": 2018,
+          "doi": "10.1016/j.nut.2018.02.012",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "4-8% pts",
+      "timeframe": "4-8 weeks",
+      "summary": "Direct EPA/DHA source, the strongest way to raise the Omega-3 Index.",
+      "citations": [
+        {
+          "title": "Omega-3 Index as CVD risk factor",
+          "year": 2004,
+          "doi": "10.1016/j.ypmed.2003.11.011",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "2-5 mmHg",
+      "timeframe": "8 weeks",
+      "summary": "Omega-3s improve endothelial function and reduce BP.",
+      "citations": [
+        {
+          "title": "Fish oil and blood pressure meta-analysis",
+          "year": 2014,
+          "doi": "10.1093/ajh/hpu024",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-006",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "15-25%",
+      "timeframe": "4 weeks",
+      "summary": "Small oily fish are among the richest omega-3 sources.",
+      "citations": [
+        {
+          "title": "Sardine consumption and lipid profile",
+          "year": 2015,
+          "doi": "10.3390/nu7010825",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-006",
+      "target": "bio-020",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "Chronic",
+      "summary": "Sardines (with edible bones) are an excellent calcium source.",
+      "citations": [
+        {
+          "title": "Calcium in small fish with bones",
+          "year": 2012,
+          "doi": "10.1016/j.foodchem.2011.10.099",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-006",
+      "target": "bio-050",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "4 weeks",
+      "summary": "Sardines contain meaningful amounts of vitamin D.",
+      "citations": [
+        {
+          "title": "Vitamin D in oily fish",
+          "year": 2007,
+          "doi": "10.1093/ajcn/85.6.1586",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-006",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Direct source of EPA/DHA.",
+      "citations": [
+        {
+          "title": "Sardines and Omega-3 Index: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sardines+Omega-3+Index+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-007",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "15-25%",
+      "timeframe": "4 weeks",
+      "summary": "Rich in EPA and DHA omega-3 fatty acids.",
+      "citations": [
+        {
+          "title": "Mackerel and Triglycerides: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Mackerel+Triglycerides+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-007",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Excellent source of long-chain omega-3s.",
+      "citations": [
+        {
+          "title": "Mackerel and Omega-3 Index: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Mackerel+Omega-3+Index+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-007",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "High",
+      "timeframe": "Chronic",
+      "summary": "Mackerel is rich in vitamin B12.",
+      "citations": [
+        {
+          "title": "Mackerel and Vitamin B12: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Mackerel+Vitamin+B12+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-008",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Complete protein source supporting total protein levels.",
+      "citations": [
+        {
+          "title": "Protein quality of poultry",
+          "year": 2013,
+          "doi": "10.3945/ajcn.112.049361",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-008",
+      "target": "bio-030",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Dietary protein supports albumin synthesis.",
+      "citations": [
+        {
+          "title": "Dietary protein and albumin",
+          "year": 2016,
+          "doi": "10.1016/j.clnu.2015.07.021",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-009",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~3%",
+      "timeframe": "8 weeks",
+      "summary": "Eggs can raise HDL cholesterol in most people.",
+      "citations": [
+        {
+          "title": "Egg consumption and HDL",
+          "year": 2017,
+          "doi": "10.3390/nu9020155",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-009",
+      "target": "bio-030",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "High-quality protein supports albumin production.",
+      "citations": [
+        {
+          "title": "Eggs and Albumin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Eggs+Albumin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-009",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Eggs provide bioavailable B12.",
+      "citations": [
+        {
+          "title": "Egg B12 bioavailability",
+          "year": 2007,
+          "doi": "10.1093/ajcn/85.4.1075",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-009",
+      "target": "bio-050",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "Chronic",
+      "summary": "One of few food sources of vitamin D.",
+      "citations": [
+        {
+          "title": "Vitamin D in eggs",
+          "year": 2009,
+          "doi": "10.1016/j.jfca.2008.10.020",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-003",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Heme iron in red meat effectively boosts hemoglobin.",
+      "citations": [
+        {
+          "title": "Red meat and iron status",
+          "year": 2014,
+          "doi": "10.1016/j.meatsci.2013.04.030",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-061",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~15-25%",
+      "timeframe": "8 weeks",
+      "summary": "Heme iron most efficiently replenishes ferritin stores.",
+      "citations": [
+        {
+          "title": "Heme vs non-heme iron absorption",
+          "year": 2010,
+          "doi": "10.1093/ajcn/nq153",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-024",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Red meat is a rich and bioavailable source of zinc.",
+      "citations": [
+        {
+          "title": "Zinc in red meat",
+          "year": 2016,
+          "doi": "10.3390/nu8120832",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Excellent source of vitamin B12.",
+      "citations": [
+        {
+          "title": "B12 in beef",
+          "year": 2007,
+          "doi": "10.1093/ajcn/85.4.1075",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-012",
+      "target": "bio-024",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Oysters contain more zinc per serving than any other food.",
+      "citations": [
+        {
+          "title": "Zinc bioavailability from oysters",
+          "year": 2001,
+          "doi": "10.1093/jn/131.4.1421S",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-012",
+      "target": "bio-058",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Zinc is a cofactor for testosterone synthesis.",
+      "citations": [
+        {
+          "title": "Zinc status and testosterone levels",
+          "year": 1996,
+          "doi": "10.1016/S0899-9007(96)80058-X",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-012",
+      "target": "bio-023",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Rich source of bioavailable iron.",
+      "citations": [
+        {
+          "title": "Iron in bivalves",
+          "year": 2010,
+          "doi": "10.1016/j.foodchem.2009.12.070",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-014",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "Soy isoflavones modestly reduce LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Soy protein and LDL cholesterol",
+          "year": 2006,
+          "doi": "10.1056/NEJMoa053966",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-014",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Complete plant protein source.",
+      "citations": [
+        {
+          "title": "Soy protein quality",
+          "year": 2016,
+          "doi": "10.3390/nu8120754",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-015",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Liver contains ~3000% DV of B12 per serving.",
+      "citations": [
+        {
+          "title": "Liver (Beef) and Vitamin B12: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Liver+%28Beef%29+Vitamin+B12+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-015",
+      "target": "bio-061",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Chronic",
+      "summary": "The single richest food source of heme iron.",
+      "citations": [
+        {
+          "title": "Liver (Beef) and Ferritin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Liver+%28Beef%29+Ferritin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-015",
+      "target": "bio-053",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Liver is the richest food source of preformed vitamin A.",
+      "citations": [
+        {
+          "title": "Vitamin A in liver",
+          "year": 2013,
+          "doi": "10.3390/nu5041823",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-015",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Liver is extremely rich in folate.",
+      "citations": [
+        {
+          "title": "Folate in organ meats",
+          "year": 2013,
+          "doi": "10.3390/nu5031823",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-016",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5% FBG",
+      "timeframe": "Chronic",
+      "summary": "Anthocyanins in blueberries improve insulin sensitivity.",
+      "citations": [
+        {
+          "title": "Blueberries and insulin sensitivity",
+          "year": 2010,
+          "doi": "10.1093/jn/nq039",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-016",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5 mmHg",
+      "timeframe": "8 weeks",
+      "summary": "Anthocyanins improve endothelial function and reduce BP.",
+      "citations": [
+        {
+          "title": "Blueberry consumption and blood pressure",
+          "year": 2019,
+          "doi": "10.1093/jn/nxy290",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-016",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "6 weeks",
+      "summary": "Polyphenols reduce systemic inflammation.",
+      "citations": [
+        {
+          "title": "Berry consumption and CRP levels",
+          "year": 2016,
+          "doi": "10.3945/ajcn.116.131573",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-017",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "One orange provides ~100% daily vitamin C needs.",
+      "citations": [
+        {
+          "title": "Vitamin C in citrus",
+          "year": 2017,
+          "doi": "10.3390/nu9111211",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-017",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Oranges are a good source of folate.",
+      "citations": [
+        {
+          "title": "Folate in citrus fruits",
+          "year": 2005,
+          "doi": "10.1093/ajcn/82.3.627",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-018",
+      "target": "bio-019",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~420mg/banana",
+      "timeframe": "Acute",
+      "summary": "Bananas are one of the most potassium-dense foods.",
+      "citations": [
+        {
+          "title": "Potassium in bananas",
+          "year": 2012,
+          "doi": "10.3945/an.112.003061",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-019",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5 mmHg",
+      "timeframe": "4 weeks",
+      "summary": "Pomegranate polyphenols improve vascular function.",
+      "citations": [
+        {
+          "title": "Pomegranate juice and blood pressure",
+          "year": 2017,
+          "doi": "10.1016/j.phrs.2017.07.030",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-019",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "8 weeks",
+      "summary": "Pomegranate reduces oxidized LDL and total LDL.",
+      "citations": [
+        {
+          "title": "Pomegranate and cardiovascular health",
+          "year": 2013,
+          "doi": "10.1155/2013/789764",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-020",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~10%",
+      "timeframe": "5 weeks",
+      "summary": "Monounsaturated fats in avocado reduce LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Avocado consumption and cardiovascular risk",
+          "year": 2015,
+          "doi": "10.1016/j.jaha.2014.001355",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-020",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "MUFA content helps maintain or raise HDL.",
+      "citations": [
+        {
+          "title": "Avocado MUFA and HDL",
+          "year": 2018,
+          "doi": "10.1093/ajcn/nqy289",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-020",
+      "target": "bio-019",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~480mg/avocado",
+      "timeframe": "Acute",
+      "summary": "Avocados are among the richest dietary sources of potassium.",
+      "citations": [
+        {
+          "title": "Potassium in avocados",
+          "year": 2016,
+          "doi": "10.3945/an.115.009639",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-022",
+      "target": "bio-017",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Anthocyanins inhibit xanthine oxidase, reducing uric acid.",
+      "citations": [
+        {
+          "title": "Tart cherry juice and uric acid",
+          "year": 2011,
+          "doi": "10.1002/art.30564",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-022",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "4 weeks",
+      "summary": "Anti-inflammatory flavonoids reduce CRP levels.",
+      "citations": [
+        {
+          "title": "Tart Cherries and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Tart+Cherries+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-019",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~160mg/cup",
+      "timeframe": "Acute",
+      "summary": "Spinach is exceptionally rich in potassium.",
+      "citations": [
+        {
+          "title": "Potassium in dark leafy greens",
+          "year": 2016,
+          "doi": "10.3945/an.115.009639",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "One of the richest food sources of folate.",
+      "citations": [
+        {
+          "title": "Spinach and Folate: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Spinach+Folate+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~40mg/cup",
+      "timeframe": "Chronic",
+      "summary": "Good plant source of magnesium.",
+      "citations": [
+        {
+          "title": "Magnesium in green vegetables",
+          "year": 2015,
+          "doi": "10.3390/nu7095388",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-023",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Contains significant iron, though non-heme form.",
+      "citations": [
+        {
+          "title": "Iron in spinach",
+          "year": 2014,
+          "doi": "10.1016/j.foodchem.2014.01.029",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-056",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Dark leafy greens are the primary source of vitamin K.",
+      "citations": [
+        {
+          "title": "Spinach and Vitamin K: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Spinach+Vitamin+K+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-026",
+      "target": "bio-056",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "One cup provides over 600% DV of vitamin K.",
+      "citations": [
+        {
+          "title": "Kale and Vitamin K: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kale+Vitamin+K+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-026",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "134mg/cup",
+      "timeframe": "Acute",
+      "summary": "Kale provides more vitamin C per gram than oranges.",
+      "citations": [
+        {
+          "title": "Kale and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kale+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-026",
+      "target": "bio-020",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~100mg/cup",
+      "timeframe": "Chronic",
+      "summary": "Kale is a good non-dairy calcium source.",
+      "citations": [
+        {
+          "title": "Calcium bioavailability from kale",
+          "year": 2005,
+          "doi": "10.1093/ajcn/82.3.541",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-027",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~90mg/cup",
+      "timeframe": "Acute",
+      "summary": "Excellent source of vitamin C.",
+      "citations": [
+        {
+          "title": "Broccoli and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Broccoli+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-027",
+      "target": "bio-056",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Rich in vitamin K1.",
+      "citations": [
+        {
+          "title": "Broccoli and Vitamin K: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Broccoli+Vitamin+K+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-027",
+      "target": "bio-025",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Sulforaphane supports liver detoxification and lowers ALT.",
+      "citations": [
+        {
+          "title": "Sulforaphane and liver function",
+          "year": 2019,
+          "doi": "10.3390/nu11092185",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-028",
+      "target": "bio-053",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Rich in beta-carotene, converted to vitamin A in the body.",
+      "citations": [
+        {
+          "title": "Beta-carotene in sweet potato",
+          "year": 2012,
+          "doi": "10.1016/j.foodchem.2011.09.085",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-028",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Moderate GI",
+      "timeframe": "Chronic",
+      "summary": "Complex carbohydrates provide sustained glucose release.",
+      "citations": [
+        {
+          "title": "Sweet Potato and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sweet+Potato+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-030",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "4-10 mmHg",
+      "timeframe": "2-6 hours",
+      "summary": "Dietary nitrates convert to nitric oxide, relaxing blood vessels.",
+      "citations": [
+        {
+          "title": "Beetroot juice and blood pressure",
+          "year": 2013,
+          "doi": "10.3945/jn.112.170233",
+          "type": "journal"
+        },
+        {
+          "title": "Dietary nitrate and blood pressure",
+          "year": 2015,
+          "doi": "10.1007/s00421-015-3117-z",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-030",
+      "target": "bio-044",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "2-5 mmHg",
+      "timeframe": "2-6 hours",
+      "summary": "Nitric oxide reduces diastolic blood pressure.",
+      "citations": [
+        {
+          "title": "Beetroot and Blood Pressure (Diastolic): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Beetroot+Blood+Pressure+%28Diastolic%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-030",
+      "target": "bio-061",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Beetroot contains non-heme iron and enhances absorption.",
+      "citations": [
+        {
+          "title": "Beetroot and Ferritin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Beetroot+Ferritin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-031",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~8 mmHg",
+      "timeframe": "12 weeks",
+      "summary": "Allicin inhibits angiotensin II and promotes vasodilation.",
+      "citations": [
+        {
+          "title": "Garlic and blood pressure meta-analysis",
+          "year": 2015,
+          "doi": "10.1007/s10557-014-6564-1",
+          "type": "journal"
+        },
+        {
+          "title": "Aged garlic extract and BP",
+          "year": 2020,
+          "doi": "10.3390/nu12030630",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-031",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "12 weeks",
+      "summary": "Garlic extracts reduce total and LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Garlic preparations and serum lipids",
+          "year": 2013,
+          "doi": "10.1111/nure.12012",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-031",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "8 weeks",
+      "summary": "Anti-inflammatory compounds reduce CRP.",
+      "citations": [
+        {
+          "title": "Garlic and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Garlic+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-032",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "8 weeks",
+      "summary": "Lycopene improves lipid profile.",
+      "citations": [
+        {
+          "title": "Lycopene and cardiovascular risk",
+          "year": 2011,
+          "doi": "10.1016/j.maturitas.2010.11.018",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-032",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~20mg/tomato",
+      "timeframe": "Acute",
+      "summary": "Good source of vitamin C.",
+      "citations": [
+        {
+          "title": "Tomatoes and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Tomatoes+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-033",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~170mg/pepper",
+      "timeframe": "Acute",
+      "summary": "Red bell peppers contain more vitamin C than oranges.",
+      "citations": [
+        {
+          "title": "Bell Peppers and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Bell+Peppers+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-033",
+      "target": "bio-061",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Enhancement",
+      "timeframe": "Acute",
+      "summary": "Vitamin C dramatically enhances non-heme iron absorption.",
+      "citations": [
+        {
+          "title": "Ascorbic acid and iron absorption",
+          "year": 1990,
+          "doi": "10.1093/ajcn/51.2.296",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-036",
+      "target": "bio-050",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "4 weeks",
+      "summary": "UV-exposed mushrooms synthesize vitamin D2.",
+      "citations": [
+        {
+          "title": "Mushrooms and vitamin D",
+          "year": 2018,
+          "doi": "10.3390/nu10101498",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-036",
+      "target": "bio-001",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Beta-glucans in mushrooms stimulate immune cell production.",
+      "citations": [
+        {
+          "title": "Mushroom beta-glucans and immunity",
+          "year": 2017,
+          "doi": "10.3390/ijms18091906",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-037",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "6 weeks",
+      "summary": "Polyunsaturated fats and phytosterols lower LDL.",
+      "citations": [
+        {
+          "title": "Walnuts and blood lipids",
+          "year": 2018,
+          "doi": "10.1016/j.amjcard.2017.10.023",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-037",
+      "target": "bio-037",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~4%",
+      "timeframe": "8 weeks",
+      "summary": "Walnut consumption reduces ApoB concentrations.",
+      "citations": [
+        {
+          "title": "Walnuts and ApoB",
+          "year": 2020,
+          "doi": "10.1161/CIRCULATIONAHA.119.044856",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-037",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Minor",
+      "timeframe": "Chronic",
+      "summary": "Walnuts provide ALA (plant omega-3) with limited EPA/DHA conversion.",
+      "citations": [
+        {
+          "title": "ALA conversion from walnuts",
+          "year": 2015,
+          "doi": "10.3945/ajcn.114.103507",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-038",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "4 weeks",
+      "summary": "Rich in monounsaturated fats and fiber.",
+      "citations": [
+        {
+          "title": "Almond consumption and LDL cholesterol",
+          "year": 2016,
+          "doi": "10.1016/j.jand.2015.12.009",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-038",
+      "target": "bio-020",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~75mg/oz",
+      "timeframe": "Chronic",
+      "summary": "Almonds are a good non-dairy calcium source.",
+      "citations": [
+        {
+          "title": "Minerals in tree nuts",
+          "year": 2015,
+          "doi": "10.3390/nu7115500",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-038",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~75mg/oz",
+      "timeframe": "Chronic",
+      "summary": "Rich source of magnesium.",
+      "citations": [
+        {
+          "title": "Magnesium in almonds",
+          "year": 2018,
+          "doi": "10.3390/nu10020168",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-038",
+      "target": "bio-055",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~7mg/oz",
+      "timeframe": "Acute",
+      "summary": "Almonds are the richest nut source of vitamin E.",
+      "citations": [
+        {
+          "title": "Almonds and Vitamin E: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Almonds+Vitamin+E+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-039",
+      "target": "bio-047",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "Optimization",
+      "timeframe": "1-3 months",
+      "summary": "Selenium supports T4\u2192T3 conversion, optimizing TSH.",
+      "citations": [
+        {
+          "title": "Brazil nuts and selenium/thyroid",
+          "year": 2015,
+          "doi": "10.1007/s12011-015-0273-1",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-039",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~7%",
+      "timeframe": "8 weeks",
+      "summary": "Selenium and healthy fats improve lipid profile.",
+      "citations": [
+        {
+          "title": "Brazil Nuts and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Brazil+Nuts+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-040",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~15%",
+      "timeframe": "4 weeks",
+      "summary": "ALA omega-3s and fiber reduce triglycerides.",
+      "citations": [
+        {
+          "title": "Chia seeds and metabolic risk factors",
+          "year": 2015,
+          "doi": "10.1007/s11130-014-0455-7",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-040",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~3 mmHg",
+      "timeframe": "12 weeks",
+      "summary": "Fiber and omega-3 content improve blood pressure.",
+      "citations": [
+        {
+          "title": "Chia Seeds and Blood Pressure (Systolic): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Chia+Seeds+Blood+Pressure+%28Systolic%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-040",
+      "target": "bio-020",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~175mg/oz",
+      "timeframe": "Chronic",
+      "summary": "Chia is one of the richest plant calcium sources.",
+      "citations": [
+        {
+          "title": "Calcium in chia seeds",
+          "year": 2017,
+          "doi": "10.1007/s13197-017-2767-x",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-041",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~15%",
+      "timeframe": "12 weeks",
+      "summary": "Lignans and ALA omega-3s reduce systemic inflammation.",
+      "citations": [
+        {
+          "title": "Flaxseed and inflammation meta-analysis",
+          "year": 2014,
+          "doi": "10.1016/j.jff.2014.01.031",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-041",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~3 mmHg",
+      "timeframe": "6 months",
+      "summary": "Ground flaxseed lowers systolic blood pressure.",
+      "citations": [
+        {
+          "title": "Flaxseed and blood pressure",
+          "year": 2013,
+          "doi": "10.1038/jhh.2013.57",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-041",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "ALA and lignans modestly reduce LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Flaxseeds and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Flaxseeds+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-042",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~160mg/oz",
+      "timeframe": "Acute",
+      "summary": "Among the richest food sources of magnesium.",
+      "citations": [
+        {
+          "title": "Magnesium in seeds",
+          "year": 2017,
+          "doi": "10.1007/s13197-017-2767-x",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-042",
+      "target": "bio-024",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~2.2mg/oz",
+      "timeframe": "Chronic",
+      "summary": "Excellent source of zinc.",
+      "citations": [
+        {
+          "title": "Zinc in pumpkin seeds",
+          "year": 2012,
+          "doi": "10.1002/ptr.3733",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-042",
+      "target": "bio-009",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Zinc supports neutrophil function.",
+      "citations": [
+        {
+          "title": "Pumpkin Seeds and Absolute Neutrophils: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Pumpkin+Seeds+Absolute+Neutrophils+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-044",
+      "target": "bio-011",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~0.5%",
+      "timeframe": "12 weeks",
+      "summary": "Low GI legume with high fiber content improves HbA1c.",
+      "citations": [
+        {
+          "title": "Legume consumption and glycemic control",
+          "year": 2014,
+          "doi": "10.1007/s00125-014-3349-0",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-044",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~180mcg/cup",
+      "timeframe": "Acute",
+      "summary": "Lentils are one of the richest food sources of folate.",
+      "citations": [
+        {
+          "title": "Lentils and Folate: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Lentils+Folate+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-044",
+      "target": "bio-023",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~6.6mg/cup",
+      "timeframe": "Chronic",
+      "summary": "Rich in non-heme iron.",
+      "citations": [
+        {
+          "title": "Iron in lentils",
+          "year": 2014,
+          "doi": "10.1016/j.foodchem.2014.01.029",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-046",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "Fiber and plant sterols reduce LDL.",
+      "citations": [
+        {
+          "title": "Chickpeas and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Chickpeas+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-046",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Low GI",
+      "timeframe": "Chronic",
+      "summary": "High fiber content moderates blood glucose.",
+      "citations": [
+        {
+          "title": "Chickpeas and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Chickpeas+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-047",
+      "target": "bio-020",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~200mg/cup",
+      "timeframe": "Acute",
+      "summary": "Excellent bioavailable calcium source.",
+      "citations": [
+        {
+          "title": "Yogurt (Greek) and Calcium: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Yogurt+%28Greek%29+Calcium+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-047",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~17g/cup",
+      "timeframe": "Chronic",
+      "summary": "High protein content supports total protein levels.",
+      "citations": [
+        {
+          "title": "Protein in Greek yogurt",
+          "year": 2015,
+          "doi": "10.3945/ajcn.114.101964",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-047",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "~3 mmHg",
+      "timeframe": "Chronic",
+      "summary": "Fermented dairy is linked to modest BP reductions.",
+      "citations": [
+        {
+          "title": "Yogurt consumption and blood pressure",
+          "year": 2017,
+          "doi": "10.3945/ajcn.116.149419",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-048",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "4-8 weeks",
+      "summary": "Probiotics in kefir reduce inflammatory markers.",
+      "citations": [
+        {
+          "title": "Kefir and inflammation",
+          "year": 2017,
+          "doi": "10.1007/s00394-016-1166-7",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-048",
+      "target": "bio-020",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~300mg/cup",
+      "timeframe": "Acute",
+      "summary": "Rich in calcium from fermented milk.",
+      "citations": [
+        {
+          "title": "Kefir and Calcium: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kefir+Calcium+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-049",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Fermented vegetables improve insulin sensitivity.",
+      "citations": [
+        {
+          "title": "Kimchi and metabolic health",
+          "year": 2013,
+          "doi": "10.1089/jmf.2012.2563",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-049",
+      "target": "bio-031",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8 weeks",
+      "summary": "Probiotic effects on lipid metabolism.",
+      "citations": [
+        {
+          "title": "Kimchi and Total Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kimchi+Total+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-051",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~8%",
+      "timeframe": "8 weeks",
+      "summary": "Polyphenols and MUFAs lower LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Mediterranean diet and olive oil",
+          "year": 2013,
+          "doi": "10.1056/NEJMoa1200303",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-051",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "MUFA content supports HDL levels.",
+      "citations": [
+        {
+          "title": "Olive Oil (EVOO) and HDL Cholesterol: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Olive+Oil+%28EVOO%29+HDL+Cholesterol+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-051",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~20%",
+      "timeframe": "Chronic",
+      "summary": "Oleocanthal has ibuprofen-like anti-inflammatory effects.",
+      "citations": [
+        {
+          "title": "Oleocanthal and inflammation",
+          "year": 2005,
+          "doi": "10.1038/437045a",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-051",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~3 mmHg",
+      "timeframe": "Chronic",
+      "summary": "EVOO polyphenols improve vascular function.",
+      "citations": [
+        {
+          "title": "EVOO and blood pressure",
+          "year": 2020,
+          "doi": "10.3390/nu12030725",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-053",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~30%",
+      "timeframe": "8 weeks",
+      "summary": "Curcumin is one of the most potent natural anti-inflammatories.",
+      "citations": [
+        {
+          "title": "Curcumin and CRP meta-analysis",
+          "year": 2019,
+          "doi": "10.1002/ptr.6226",
+          "type": "journal"
+        },
+        {
+          "title": "Curcuminoids and inflammatory markers",
+          "year": 2015,
+          "doi": "10.1016/j.phymed.2015.08.005",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-053",
+      "target": "bio-040",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "8 weeks",
+      "summary": "Curcumin suppresses IL-6 production.",
+      "citations": [
+        {
+          "title": "Curcumin and IL-6",
+          "year": 2018,
+          "doi": "10.1016/j.jff.2018.01.017",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-053",
+      "target": "bio-041",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "8 weeks",
+      "summary": "Curcumin inhibits TNF-alpha expression.",
+      "citations": [
+        {
+          "title": "Turmeric and TNF-alpha: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Turmeric+TNF-alpha+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-053",
+      "target": "bio-025",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Curcumin has hepatoprotective properties, lowering ALT.",
+      "citations": [
+        {
+          "title": "Curcumin and NAFLD",
+          "year": 2019,
+          "doi": "10.1016/j.phymed.2018.11.021",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-054",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~8%",
+      "timeframe": "12 weeks",
+      "summary": "Gingerols improve insulin sensitivity and glucose uptake.",
+      "citations": [
+        {
+          "title": "Ginger and fasting blood glucose",
+          "year": 2018,
+          "doi": "10.1016/j.ctim.2017.12.015",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-054",
+      "target": "bio-011",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "0.3-0.5%",
+      "timeframe": "12 weeks",
+      "summary": "Regular ginger intake modestly improves HbA1c.",
+      "citations": [
+        {
+          "title": "Ginger supplementation and glycemic indices",
+          "year": 2019,
+          "doi": "10.1016/j.ctcp.2019.01.005",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-054",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~15%",
+      "timeframe": "12 weeks",
+      "summary": "Gingerols reduce triglyceride synthesis.",
+      "citations": [
+        {
+          "title": "Ginger and Triglycerides: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Ginger+Triglycerides+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-055",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "3-5%",
+      "timeframe": "Chronic",
+      "summary": "Cinnamaldehyde modulates insulin receptor signaling.",
+      "citations": [
+        {
+          "title": "Cinnamon and type 2 diabetes",
+          "year": 2003,
+          "doi": "10.2337/diacare.26.12.3215",
+          "type": "journal"
+        },
+        {
+          "title": "Cinnamon and fasting glucose",
+          "year": 2019,
+          "doi": "10.1016/j.jfda.2019.02.003",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-055",
+      "target": "bio-011",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~0.3%",
+      "timeframe": "12 weeks",
+      "summary": "Modest HbA1c improvement with daily cinnamon.",
+      "citations": [
+        {
+          "title": "Cinnamon and Hemoglobin A1C: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cinnamon+Hemoglobin+A1C+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-055",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "4-18 weeks",
+      "summary": "Cinnamon modestly reduces LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Cinnamon and lipid levels",
+          "year": 2013,
+          "doi": "10.1370/afm.1517",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-058",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "12 weeks",
+      "summary": "EGCG catechins reduce LDL cholesterol absorption.",
+      "citations": [
+        {
+          "title": "Green tea and lipid profile meta-analysis",
+          "year": 2011,
+          "doi": "10.1016/j.amjcard.2010.10.009",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-058",
+      "target": "bio-025",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "EGCG catechins support liver health, lowering ALT.",
+      "citations": [
+        {
+          "title": "Green tea and liver enzymes",
+          "year": 2015,
+          "doi": "10.1002/hep.27797",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-058",
+      "target": "bio-026",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Green tea has hepatoprotective effects on AST.",
+      "citations": [
+        {
+          "title": "Green Tea and AST (SGOT): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Green+Tea+AST+%28SGOT%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-058",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "~2%",
+      "timeframe": "Chronic",
+      "summary": "Modest improvement in fasting glucose.",
+      "citations": [
+        {
+          "title": "Green Tea and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Green+Tea+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-059",
+      "target": "bio-025",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "Chronic",
+      "summary": "Regular coffee consumption is strongly protective against liver disease.",
+      "citations": [
+        {
+          "title": "Coffee and liver enzymes",
+          "year": 2021,
+          "doi": "10.1186/s12876-021-01654-5",
+          "type": "journal"
+        },
+        {
+          "title": "Coffee and liver health meta-analysis",
+          "year": 2017,
+          "doi": "10.1111/apt.14240",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-059",
+      "target": "bio-026",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "Chronic",
+      "summary": "Coffee protects against AST elevation.",
+      "citations": [
+        {
+          "title": "Coffee and AST (SGOT): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Coffee+AST+%28SGOT%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-059",
+      "target": "bio-029",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~40%",
+      "timeframe": "Chronic",
+      "summary": "Coffee is strongly associated with lower GGT.",
+      "citations": [
+        {
+          "title": "Coffee consumption and GGT",
+          "year": 2014,
+          "doi": "10.1002/hep.26856",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-059",
+      "target": "bio-017",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "Chronic",
+      "summary": "Antioxidants in coffee help reduce uric acid.",
+      "citations": [
+        {
+          "title": "Coffee and Uric Acid: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Coffee+Uric+Acid+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-060",
+      "target": "bio-014",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "Hours",
+      "summary": "Hydration directly dilutes BUN levels.",
+      "citations": [
+        {
+          "title": "Hydration and BUN",
+          "year": 2016,
+          "doi": "10.1038/nrneph.2015.171",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-060",
+      "target": "bio-015",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Hours",
+      "summary": "Adequate hydration supports optimal creatinine clearance.",
+      "citations": [
+        {
+          "title": "Water and Creatinine: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Water+Creatinine+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-060",
+      "target": "bio-016",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Hours",
+      "summary": "Proper hydration supports kidney filtration.",
+      "citations": [
+        {
+          "title": "Water and eGFR: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Water+eGFR+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-061",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~7 mmHg",
+      "timeframe": "6 weeks",
+      "summary": "Anthocyanins and organic acids show strong antihypertensive effects.",
+      "citations": [
+        {
+          "title": "Hibiscus sabdariffa and blood pressure",
+          "year": 2010,
+          "doi": "10.1089/acm.2008.0610",
+          "type": "journal"
+        },
+        {
+          "title": "Hibiscus tea and hypertension RCT",
+          "year": 2015,
+          "doi": "10.1016/j.jnim.2015.05.001",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-061",
+      "target": "bio-044",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~3 mmHg",
+      "timeframe": "6 weeks",
+      "summary": "Reduces diastolic BP via ACE inhibition.",
+      "citations": [
+        {
+          "title": "Hibiscus Tea and Blood Pressure (Diastolic): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Hibiscus+Tea+Blood+Pressure+%28Diastolic%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-062",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "2-3 mmHg",
+      "timeframe": "2-8 weeks",
+      "summary": "Flavanols stimulate nitric oxide production.",
+      "citations": [
+        {
+          "title": "Cocoa and blood pressure",
+          "year": 2012,
+          "doi": "10.1002/14651858.CD008893.pub2",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-062",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "Cocoa flavanols support HDL function.",
+      "citations": [
+        {
+          "title": "Cocoa flavanols and HDL",
+          "year": 2017,
+          "doi": "10.1093/ajcn/nqx002",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-062",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~65mg/oz",
+      "timeframe": "Acute",
+      "summary": "Dark chocolate is rich in magnesium.",
+      "citations": [
+        {
+          "title": "Magnesium in dark chocolate",
+          "year": 2015,
+          "doi": "10.3390/nu7115500",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-062",
+      "target": "bio-023",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~3.4mg/oz",
+      "timeframe": "Chronic",
+      "summary": "Contains meaningful amounts of iron.",
+      "citations": [
+        {
+          "title": "Iron in cocoa products",
+          "year": 2014,
+          "doi": "10.1016/j.foodchem.2014.01.029",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-063",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Post-prandial",
+      "timeframe": "Immediate",
+      "summary": "Acetic acid delays gastric emptying and improves insulin sensitivity.",
+      "citations": [
+        {
+          "title": "Vinegar and glycemic response",
+          "year": 2004,
+          "doi": "10.2337/diacare.27.1.281",
+          "type": "journal"
+        },
+        {
+          "title": "Vinegar improves insulin sensitivity",
+          "year": 2004,
+          "doi": "10.1111/j.1464-5491.2006.01993.x",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-063",
+      "target": "bio-012",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~20%",
+      "timeframe": "Acute",
+      "summary": "Acetic acid improves insulin sensitivity post-meal.",
+      "citations": [
+        {
+          "title": "Apple Cider Vinegar and Insulin (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Apple+Cider+Vinegar+Insulin+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-064",
+      "target": "bio-050",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "2-4 weeks",
+      "summary": "One of the richest natural sources of vitamin D3.",
+      "citations": [
+        {
+          "title": "Cod liver oil and vitamin D status",
+          "year": 2004,
+          "doi": "10.1007/s00198-004-1640-4",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-064",
+      "target": "bio-053",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Also rich in preformed vitamin A.",
+      "citations": [
+        {
+          "title": "Vitamin A in cod liver oil",
+          "year": 2004,
+          "doi": "10.1007/s00198-004-1640-4",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-064",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Direct source of EPA and DHA.",
+      "citations": [
+        {
+          "title": "Cod Liver Oil and Omega-3 Index: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cod+Liver+Oil+Omega-3+Index+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-065",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Provides glycine, proline, and collagen-derived amino acids.",
+      "citations": [
+        {
+          "title": "Amino acids in bone broth",
+          "year": 2017,
+          "doi": "10.1007/s00198-016-3882-6",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-065",
+      "target": "bio-030",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "Chronic",
+      "summary": "Amino acids support albumin synthesis.",
+      "citations": [
+        {
+          "title": "Bone Broth and Albumin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Bone+Broth+Albumin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-066",
+      "target": "bio-047",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Iodine supports thyroid function; can optimize TSH.",
+      "citations": [
+        {
+          "title": "Seaweed and thyroid function",
+          "year": 2014,
+          "doi": "10.1089/thy.2013.0296",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-066",
+      "target": "bio-048",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Iodine is necessary for T4 production.",
+      "citations": [
+        {
+          "title": "Seaweed (Kelp) and Free T4: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Seaweed+%28Kelp%29+Free+T4+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-035",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~70mcg/cup",
+      "timeframe": "Acute",
+      "summary": "Asparagus is among the richest vegetable sources of folate.",
+      "citations": [
+        {
+          "title": "Asparagus and Folate: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Asparagus+Folate+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-035",
+      "target": "bio-042",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Folate helps convert homocysteine to methionine.",
+      "citations": [
+        {
+          "title": "Folate and homocysteine reduction",
+          "year": 2005,
+          "doi": "10.1016/j.amjcard.2005.03.065",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-034",
+      "target": "bio-056",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~220mcg/cup",
+      "timeframe": "Acute",
+      "summary": "Excellent source of vitamin K.",
+      "citations": [
+        {
+          "title": "Brussels Sprouts and Vitamin K: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Brussels+Sprouts+Vitamin+K+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-034",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~75mg/cup",
+      "timeframe": "Acute",
+      "summary": "Rich in vitamin C.",
+      "citations": [
+        {
+          "title": "Brussels Sprouts and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Brussels+Sprouts+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-057",
+      "target": "bio-057",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "8 weeks",
+      "summary": "Crocin and safranal help modulate cortisol levels.",
+      "citations": [
+        {
+          "title": "Saffron and mood/cortisol",
+          "year": 2014,
+          "doi": "10.1016/j.jad.2013.12.025",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-021",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "8 weeks",
+      "summary": "Polyphenols like ellagic acid improve lipid profile.",
+      "citations": [
+        {
+          "title": "Strawberry consumption and CV risk",
+          "year": 2016,
+          "doi": "10.3390/nu8030154",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-021",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~90mg/cup",
+      "timeframe": "Acute",
+      "summary": "Excellent source of vitamin C.",
+      "citations": [
+        {
+          "title": "Strawberries and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Strawberries+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-023",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~70mg/kiwi",
+      "timeframe": "Acute",
+      "summary": "Kiwi has more vitamin C per gram than most citrus fruits.",
+      "citations": [
+        {
+          "title": "Kiwi and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kiwi+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-023",
+      "target": "bio-006",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Vitamin C and folate in kiwi support platelet function.",
+      "citations": [
+        {
+          "title": "Kiwi and Platelets: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kiwi+Platelets+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-024",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "~3%",
+      "timeframe": "Chronic",
+      "summary": "Pectin fiber modestly supports LDL reduction.",
+      "citations": [
+        {
+          "title": "Apples and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Apples+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-043",
+      "target": "bio-055",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~7.4mg/oz",
+      "timeframe": "Acute",
+      "summary": "One of the richest food sources of vitamin E.",
+      "citations": [
+        {
+          "title": "Sunflower Seeds and Vitamin E: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sunflower+Seeds+Vitamin+E+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-043",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~100mg/oz",
+      "timeframe": "Chronic",
+      "summary": "Good source of magnesium.",
+      "citations": [
+        {
+          "title": "Sunflower Seeds and Magnesium: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sunflower+Seeds+Magnesium+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-045",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Low GI",
+      "timeframe": "Chronic",
+      "summary": "High fiber and resistant starch moderate blood glucose.",
+      "citations": [
+        {
+          "title": "Black Beans and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Black+Beans+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-045",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "128mcg/cup",
+      "timeframe": "Acute",
+      "summary": "Rich in folate.",
+      "citations": [
+        {
+          "title": "Black Beans and Folate: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Black+Beans+Folate+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-056",
+      "target": "bio-057",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Carnosol may help modulate cortisol pathways.",
+      "citations": [
+        {
+          "title": "Rosemary and Cortisol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Rosemary+Cortisol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-050",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~15mg/cup",
+      "timeframe": "Chronic",
+      "summary": "Fermentation increases bioavailability of vitamin C.",
+      "citations": [
+        {
+          "title": "Sauerkraut and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sauerkraut+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-003",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Moderate glycemic index; better glucose response than white rice.",
+      "citations": [
+        {
+          "title": "Brown Rice and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Brown+Rice+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-003",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~84mg/cup",
+      "timeframe": "Chronic",
+      "summary": "Decent source of magnesium.",
+      "citations": [
+        {
+          "title": "Brown Rice and Magnesium: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Brown+Rice+Magnesium+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-004",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~7%",
+      "timeframe": "4 weeks",
+      "summary": "Beta-glucan fiber reduces LDL cholesterol.",
+      "citations": [
+        {
+          "title": "Barley beta-glucan and cholesterol",
+          "year": 2010,
+          "doi": "10.1093/ajcn/nq036",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-004",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Post-meal",
+      "timeframe": "Immediate",
+      "summary": "Beta-glucan slows carbohydrate digestion.",
+      "citations": [
+        {
+          "title": "Barley and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Barley+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-011",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Complete protein source.",
+      "citations": [
+        {
+          "title": "Turkey and Total Protein: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Turkey+Total+Protein+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-013",
+      "target": "bio-024",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Contains zinc.",
+      "citations": [
+        {
+          "title": "Shrimp and Zinc: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Shrimp+Zinc+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-052",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~3-5%",
+      "timeframe": "Chronic",
+      "summary": "MCTs may raise HDL cholesterol.",
+      "citations": [
+        {
+          "title": "Coconut oil and HDL",
+          "year": 2018,
+          "doi": "10.1136/bmjopen-2017-020167",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-029",
+      "target": "bio-053",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Beta-carotene in carrots converts to vitamin A (retinol).",
+      "citations": [
+        {
+          "title": "Carotenoid bioavailability",
+          "year": 2005,
+          "doi": "10.1093/ajcn/82.3.551",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-029",
+      "target": "bio-008",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Vitamin A supports lymphocyte differentiation.",
+      "citations": [
+        {
+          "title": "Carrots and Lymphocytes %: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Carrots+Lymphocytes+%25+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-002",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Iron and B12 in beef support RBC production.",
+      "citations": [
+        {
+          "title": "Iron and erythropoiesis",
+          "year": 2017,
+          "doi": "10.1182/blood-2017-01-761106",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-015",
+      "target": "bio-002",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "4 weeks",
+      "summary": "Liver is the richest source of nutrients for RBC synthesis.",
+      "citations": [
+        {
+          "title": "Liver (Beef) and RBC: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Liver+%28Beef%29+RBC+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-002",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Folate and iron in spinach support RBC formation.",
+      "citations": [
+        {
+          "title": "Spinach and RBC: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Spinach+RBC+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-004",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4-8 weeks",
+      "summary": "Iron-rich foods increase hematocrit by boosting RBC mass.",
+      "citations": [
+        {
+          "title": "Iron supplementation and hematocrit",
+          "year": 2015,
+          "doi": "10.1016/j.nut.2014.12.018",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-030",
+      "target": "bio-004",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Beetroot nitrates improve oxygen delivery and RBC function.",
+      "citations": [
+        {
+          "title": "Beetroot and Hematocrit: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Beetroot+Hematocrit+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-015",
+      "target": "bio-005",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Normalization",
+      "timeframe": "8 weeks",
+      "summary": "B12 and folate in liver correct macrocytic anemia (low MCV).",
+      "citations": [
+        {
+          "title": "B12 deficiency and MCV",
+          "year": 2003,
+          "doi": "10.1056/NEJMcp030524",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-044",
+      "target": "bio-005",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Folate in lentils supports normal MCV.",
+      "citations": [
+        {
+          "title": "Lentils and MCV: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Lentils+MCV+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-029",
+      "target": "bio-007",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Vitamin A supports neutrophil maturation.",
+      "citations": [
+        {
+          "title": "Vitamin A and innate immunity",
+          "year": 2018,
+          "doi": "10.3390/nu10010045",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-042",
+      "target": "bio-007",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Zinc in pumpkin seeds supports neutrophil production.",
+      "citations": [
+        {
+          "title": "Pumpkin Seeds and Neutrophils %: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Pumpkin+Seeds+Neutrophils+%25+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-028",
+      "target": "bio-008",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Beta-carotene supports lymphocyte proliferation.",
+      "citations": [
+        {
+          "title": "Carotenoids and immune function",
+          "year": 2011,
+          "doi": "10.1017/S0029665110003800",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-036",
+      "target": "bio-008",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Beta-glucans in shiitake stimulate lymphocyte activity.",
+      "citations": [
+        {
+          "title": "Mushroom immunomodulation",
+          "year": 2015,
+          "doi": "10.1016/j.jfda.2015.10.001",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-055",
+      "target": "bio-013",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~15%",
+      "timeframe": "12 weeks",
+      "summary": "Cinnamon improves insulin sensitivity, lowering HOMA-IR.",
+      "citations": [
+        {
+          "title": "Cinnamon and insulin resistance",
+          "year": 2019,
+          "doi": "10.1016/j.clnu.2018.12.027",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-051",
+      "target": "bio-013",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "EVOO polyphenols improve insulin sensitivity.",
+      "citations": [
+        {
+          "title": "EVOO and insulin resistance",
+          "year": 2017,
+          "doi": "10.3390/nu9101113",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-060",
+      "target": "bio-018",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Dilution",
+      "timeframe": "Hours",
+      "summary": "Adequate water intake helps regulate sodium balance.",
+      "citations": [
+        {
+          "title": "Water and Sodium: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Water+Sodium+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-018",
+      "target": "bio-018",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Potassium in bananas helps excrete excess sodium.",
+      "citations": [
+        {
+          "title": "Potassium-sodium balance",
+          "year": 2013,
+          "doi": "10.1136/bmj.f1378",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-047",
+      "target": "bio-022",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~200mg/cup",
+      "timeframe": "Acute",
+      "summary": "Greek yogurt provides bioavailable phosphorus.",
+      "citations": [
+        {
+          "title": "Yogurt (Greek) and Phosphorus: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Yogurt+%28Greek%29+Phosphorus+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-009",
+      "target": "bio-022",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~85mg/egg",
+      "timeframe": "Acute",
+      "summary": "Eggs contain meaningful phosphorus.",
+      "citations": [
+        {
+          "title": "Eggs and Phosphorus: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Eggs+Phosphorus+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-020",
+      "target": "bio-027",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Healthy fats in avocado support liver/bile function.",
+      "citations": [
+        {
+          "title": "Avocado and Alkaline Phosphatase: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Avocado+Alkaline+Phosphatase+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-058",
+      "target": "bio-027",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Green tea catechins support hepatobiliary health.",
+      "citations": [
+        {
+          "title": "Green Tea and Alkaline Phosphatase: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Green+Tea+Alkaline+Phosphatase+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-053",
+      "target": "bio-028",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Curcumin upregulates UGT enzymes for bilirubin conjugation.",
+      "citations": [
+        {
+          "title": "Curcumin and bilirubin metabolism",
+          "year": 2014,
+          "doi": "10.1002/ptr.5107",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-059",
+      "target": "bio-028",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Coffee compounds support bilirubin clearance.",
+      "citations": [
+        {
+          "title": "Coffee and Bilirubin Total: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Coffee+Bilirubin+Total+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-035",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "15-25%",
+      "timeframe": "4 weeks",
+      "summary": "Omega-3s reduce hepatic VLDL secretion.",
+      "citations": [
+        {
+          "title": "Omega-3 and VLDL kinetics",
+          "year": 2012,
+          "doi": "10.1194/jlr.M024901",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-040",
+      "target": "bio-035",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "8 weeks",
+      "summary": "ALA and fiber reduce VLDL production.",
+      "citations": [
+        {
+          "title": "Chia Seeds and VLDL: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Chia+Seeds+VLDL+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-075",
+      "target": "bio-036",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "5-10%",
+      "timeframe": "Chronic",
+      "summary": "Moderate red wine may modestly reduce Lp(a).",
+      "citations": [
+        {
+          "title": "Alcohol and Lp(a)",
+          "year": 2017,
+          "doi": "10.1016/j.atherosclerosis.2017.08.004",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-041",
+      "target": "bio-036",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "Chronic",
+      "summary": "Flaxseed consumption associated with lower Lp(a).",
+      "citations": [
+        {
+          "title": "Flaxseed and Lp(a)",
+          "year": 2009,
+          "doi": "10.1016/j.atherosclerosis.2008.06.024",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-053",
+      "target": "bio-039",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "8 weeks",
+      "summary": "Curcumin's anti-inflammatory action lowers ESR.",
+      "citations": [
+        {
+          "title": "Curcumin and ESR in RA",
+          "year": 2012,
+          "doi": "10.1002/ptr.4639",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-054",
+      "target": "bio-039",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Ginger reduces inflammatory markers including ESR.",
+      "citations": [
+        {
+          "title": "Ginger and inflammation",
+          "year": 2020,
+          "doi": "10.3390/nu12051280",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-005",
+      "target": "bio-046",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "8 weeks",
+      "summary": "Omega-3s have mild antithrombotic effects.",
+      "citations": [
+        {
+          "title": "Omega-3 and hemostasis",
+          "year": 2013,
+          "doi": "10.1016/j.plefa.2013.03.004",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-031",
+      "target": "bio-046",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Allicin in garlic has anticoagulant properties.",
+      "citations": [
+        {
+          "title": "Garlic and fibrinolysis",
+          "year": 2007,
+          "doi": "10.1016/j.mam.2006.09.006",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-039",
+      "target": "bio-049",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Selenium in brazil nuts aids T4\u2192T3 conversion.",
+      "citations": [
+        {
+          "title": "Selenium and thyroid",
+          "year": 2015,
+          "doi": "10.1007/s12011-015-0273-1",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-066",
+      "target": "bio-049",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Iodine from seaweed supports T3 production.",
+      "citations": [
+        {
+          "title": "Seaweed (Kelp) and Free T3: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Seaweed+%28Kelp%29+Free+T3+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-041",
+      "target": "bio-059",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Lignans in flaxseed may modestly modulate estrogen.",
+      "citations": [
+        {
+          "title": "Flaxseed lignans and estrogen",
+          "year": 2014,
+          "doi": "10.1158/1940-6207.CAPR-14-0193",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-069",
+      "target": "bio-059",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Soy isoflavones have weak estrogenic activity.",
+      "citations": [
+        {
+          "title": "Soy isoflavones and estradiol",
+          "year": 2010,
+          "doi": "10.1016/j.fertnstert.2009.04.038",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-074",
+      "target": "bio-060",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "8 weeks",
+      "summary": "Ashwagandha may support adrenal DHEA-S output.",
+      "citations": [
+        {
+          "title": "Ashwagandha and hormones",
+          "year": 2019,
+          "doi": "10.1007/s12325-019-01007-x",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-073",
+      "target": "bio-060",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Maca may support adrenal hormone balance.",
+      "citations": [
+        {
+          "title": "Maca and hormones",
+          "year": 2015,
+          "doi": "10.1155/2015/468937",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-062",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Adequate iron from beef reduces compensatory TIBC elevation.",
+      "citations": [
+        {
+          "title": "Lean Beef and TIBC: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Lean+Beef+TIBC+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-062",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Iron from spinach helps normalize TIBC.",
+      "citations": [
+        {
+          "title": "Spinach and TIBC: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Spinach+TIBC+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-047",
+      "target": "bio-064",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Protein-rich yogurt supports globulin synthesis.",
+      "citations": [
+        {
+          "title": "Yogurt (Greek) and Globulin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Yogurt+%28Greek%29+Globulin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-065",
+      "target": "bio-064",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Amino acids in bone broth support immunoglobulin production.",
+      "citations": [
+        {
+          "title": "Bone Broth and Globulin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Bone+Broth+Globulin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-067",
+      "target": "bio-053",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Mangoes are extremely rich in beta-carotene/vitamin A.",
+      "citations": [
+        {
+          "title": "Mango and Vitamin A (Retinol): increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Mango+Vitamin+A+%28Retinol%29+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-067",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~60mg/cup",
+      "timeframe": "Acute",
+      "summary": "Good source of vitamin C.",
+      "citations": [
+        {
+          "title": "Mango and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Mango+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-068",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~80mg/cup",
+      "timeframe": "Acute",
+      "summary": "Rich in vitamin C.",
+      "citations": [
+        {
+          "title": "Pineapple and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Pineapple+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-068",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Bromelain has anti-inflammatory properties.",
+      "citations": [
+        {
+          "title": "Bromelain and inflammation",
+          "year": 2016,
+          "doi": "10.1155/2016/9781206",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-069",
+      "target": "bio-052",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~120mcg/cup",
+      "timeframe": "Acute",
+      "summary": "Good source of folate.",
+      "citations": [
+        {
+          "title": "Edamame and Folate: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Edamame+Folate+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-069",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~17g/cup",
+      "timeframe": "Chronic",
+      "summary": "Complete plant protein.",
+      "citations": [
+        {
+          "title": "Edamame and Total Protein: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Edamame+Total+Protein+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-070",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Fermentation produces bioavailable B12.",
+      "citations": [
+        {
+          "title": "Fermented soy and B12",
+          "year": 2014,
+          "doi": "10.3390/nu6051861",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-070",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~31g/cup",
+      "timeframe": "Chronic",
+      "summary": "Very high protein content.",
+      "citations": [
+        {
+          "title": "Tempeh and Total Protein: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Tempeh+Total+Protein+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-071",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "2 weeks",
+      "summary": "Concentrated EPA/DHA source.",
+      "citations": [
+        {
+          "title": "Fish roe omega-3 bioavailability",
+          "year": 2017,
+          "doi": "10.3390/nu9090999",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-071",
+      "target": "bio-050",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "4 weeks",
+      "summary": "Rich in vitamin D3.",
+      "citations": [
+        {
+          "title": "Salmon Roe and Vitamin D (25-OH): increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Salmon+Roe+Vitamin+D+%2825-OH%29+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-072",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "~25g/scoop",
+      "timeframe": "Acute",
+      "summary": "High-quality complete protein.",
+      "citations": [
+        {
+          "title": "Whey Protein and Total Protein: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Whey+Protein+Total+Protein+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-072",
+      "target": "bio-030",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Amino acids support albumin synthesis.",
+      "citations": [
+        {
+          "title": "Whey Protein and Albumin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Whey+Protein+Albumin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-072",
+      "target": "bio-008",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Immunoglobulin fractions support lymphocyte function.",
+      "citations": [
+        {
+          "title": "Whey protein and immunity",
+          "year": 2011,
+          "doi": "10.1017/S000711451000386X",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-073",
+      "target": "bio-058",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "12 weeks",
+      "summary": "May support testosterone via adrenal pathways.",
+      "citations": [
+        {
+          "title": "Maca and male hormones",
+          "year": 2009,
+          "doi": "10.1111/j.1439-0272.2008.00892.x",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-074",
+      "target": "bio-057",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "~30%",
+      "timeframe": "8 weeks",
+      "summary": "Withanolides significantly reduce cortisol levels.",
+      "citations": [
+        {
+          "title": "Ashwagandha and cortisol RCT",
+          "year": 2012,
+          "doi": "10.4103/0253-7176.106022",
+          "type": "journal"
+        },
+        {
+          "title": "Ashwagandha stress reduction",
+          "year": 2019,
+          "doi": "10.1097/MD.0000000000017186",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-074",
+      "target": "bio-058",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~15%",
+      "timeframe": "8 weeks",
+      "summary": "Supports testosterone in stressed males.",
+      "citations": [
+        {
+          "title": "Ashwagandha and Testosterone: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Ashwagandha+Testosterone+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-075",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "Chronic",
+      "summary": "Moderate intake raises HDL cholesterol.",
+      "citations": [
+        {
+          "title": "Moderate alcohol and HDL",
+          "year": 2011,
+          "doi": "10.1136/bmj.d671",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-075",
+      "target": "bio-046",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Resveratrol has mild anticoagulant properties.",
+      "citations": [
+        {
+          "title": "Red Wine (moderate) and Fibrinogen: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Red+Wine+%28moderate%29+Fibrinogen+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-076",
+      "target": "bio-016",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Proanthocyanidins support kidney/urinary health.",
+      "citations": [
+        {
+          "title": "Cranberries and UTI prevention",
+          "year": 2017,
+          "doi": "10.1016/j.jnutbio.2017.04.009",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-076",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Polyphenols reduce inflammatory markers.",
+      "citations": [
+        {
+          "title": "Cranberries and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cranberries+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-077",
+      "target": "bio-003",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4 weeks",
+      "summary": "Rich in heme iron for hemoglobin synthesis.",
+      "citations": [
+        {
+          "title": "Flank Steak and Hemoglobin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Flank+Steak+Hemoglobin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-077",
+      "target": "bio-024",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Chronic",
+      "summary": "Good source of bioavailable zinc.",
+      "citations": [
+        {
+          "title": "Flank Steak and Zinc: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Flank+Steak+Zinc+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-077",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Excellent source of B12.",
+      "citations": [
+        {
+          "title": "Flank Steak and Vitamin B12: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Flank+Steak+Vitamin+B12+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-078",
+      "target": "bio-056",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Very High",
+      "timeframe": "Acute",
+      "summary": "Natto is the richest food source of vitamin K2 (MK-7).",
+      "citations": [
+        {
+          "title": "Natto and vitamin K2",
+          "year": 2012,
+          "doi": "10.1159/000343129",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-078",
+      "target": "bio-046",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Nattokinase has fibrinolytic (clot-dissolving) activity.",
+      "citations": [
+        {
+          "title": "Nattokinase and fibrinolysis",
+          "year": 2018,
+          "doi": "10.1155/2018/4195643",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-079",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~10%",
+      "timeframe": "8 weeks",
+      "summary": "Isothiocyanates improve insulin sensitivity.",
+      "citations": [
+        {
+          "title": "Moringa and blood glucose",
+          "year": 2016,
+          "doi": "10.1093/nutrit/nuw009",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-079",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Moringa leaves contain 7x more vitamin C than oranges.",
+      "citations": [
+        {
+          "title": "Moringa and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Moringa+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-079",
+      "target": "bio-023",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "Chronic",
+      "summary": "Very rich in plant-based iron.",
+      "citations": [
+        {
+          "title": "Moringa and Iron (Serum): increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Moringa+Iron+%28Serum%29+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-080",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "~5%",
+      "timeframe": "12 weeks",
+      "summary": "Concentrated EGCG reduces LDL oxidation and absorption.",
+      "citations": [
+        {
+          "title": "Matcha catechins and lipids",
+          "year": 2020,
+          "doi": "10.1016/j.foodres.2020.109039",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-080",
+      "target": "bio-057",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "L-theanine in matcha reduces cortisol and promotes calm.",
+      "citations": [
+        {
+          "title": "L-theanine and stress",
+          "year": 2019,
+          "doi": "10.3390/nu11102362",
+          "type": "journal"
+        }
+      ]
+    },
+    {
+      "source": "food-080",
+      "target": "bio-025",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Variable",
+      "timeframe": "Chronic",
+      "summary": "Concentrated catechins protect against liver enzyme elevation.",
+      "citations": [
+        {
+          "title": "Matcha and ALT (SGPT): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Matcha+ALT+%28SGPT%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-011",
+      "target": "bio-003",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "6-8 weeks",
+      "summary": "Turkey provides heme iron and B12 that support hemoglobin production.",
+      "citations": [
+        {
+          "title": "Turkey and Hemoglobin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Turkey+Hemoglobin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-013",
+      "target": "bio-051",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "4-8 weeks",
+      "summary": "Shrimp is a concentrated dietary source of vitamin B12.",
+      "citations": [
+        {
+          "title": "Shrimp and Vitamin B12: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Shrimp+Vitamin+B12+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-013",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Moderate",
+      "timeframe": "Acute",
+      "summary": "Seafood protein supports serum protein status.",
+      "citations": [
+        {
+          "title": "Shrimp and Total Protein: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Shrimp+Total+Protein+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-024",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Apple polyphenols and soluble fiber support glucose control.",
+      "citations": [
+        {
+          "title": "Apples and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Apples+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-050",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "4-8 weeks",
+      "summary": "Fermented cabbage supports gut-linked inflammatory balance.",
+      "citations": [
+        {
+          "title": "Sauerkraut and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sauerkraut+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-050",
+      "target": "bio-001",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "4-8 weeks",
+      "summary": "Fermented food intake may support immune-cell homeostasis.",
+      "citations": [
+        {
+          "title": "Sauerkraut and White Blood Cells: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Sauerkraut+White+Blood+Cells+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-052",
+      "target": "bio-032",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "5-10%",
+      "timeframe": "4-8 weeks",
+      "summary": "Saturated fat in coconut oil may also raise LDL.",
+      "citations": [
+        {
+          "title": "Coconut Oil and LDL Cholesterol: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Coconut+Oil+LDL+Cholesterol+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-056",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8 weeks",
+      "summary": "Rosmarinic acid and diterpenes may dampen inflammatory signaling.",
+      "citations": [
+        {
+          "title": "Rosemary and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Rosemary+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-056",
+      "target": "bio-025",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Herb polyphenols are associated with mild hepatoprotective effects.",
+      "citations": [
+        {
+          "title": "Rosemary and ALT (SGPT): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Rosemary+ALT+%28SGPT%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-057",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8 weeks",
+      "summary": "Saffron bioactives can reduce inflammatory burden.",
+      "citations": [
+        {
+          "title": "Saffron and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Saffron+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-001",
+      "target": "bio-031",
+      "effect": "decrease",
+      "strength": "high",
+      "magnitude": "5-10%",
+      "timeframe": "4-6 weeks",
+      "summary": "Beta-glucan intake lowers total cholesterol through bile-acid binding.",
+      "citations": [
+        {
+          "title": "Oats and Total Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Oats+Total+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-001",
+      "target": "bio-037",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Modest",
+      "timeframe": "6-12 weeks",
+      "summary": "Improvements in atherogenic particle burden can reduce ApoB.",
+      "citations": [
+        {
+          "title": "Oats and ApoB: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Oats+ApoB+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-004",
+      "target": "bio-031",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "4-8%",
+      "timeframe": "6-8 weeks",
+      "summary": "Barley beta-glucan has LDL and total cholesterol lowering effects.",
+      "citations": [
+        {
+          "title": "Barley and Total Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Barley+Total+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-004",
+      "target": "bio-012",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Whole-grain barley may improve insulin dynamics.",
+      "citations": [
+        {
+          "title": "Barley and Insulin (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Barley+Insulin+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-080",
+      "target": "bio-040",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "6-12 weeks",
+      "summary": "High-catechin matcha intake can reduce pro-inflammatory cytokine signaling.",
+      "citations": [
+        {
+          "title": "Matcha and IL-6: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Matcha+IL-6+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-080",
+      "target": "bio-041",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "6-12 weeks",
+      "summary": "Tea catechins are associated with lower TNF-alpha activity.",
+      "citations": [
+        {
+          "title": "Matcha and TNF-alpha: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Matcha+TNF-alpha+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-054",
+      "target": "bio-040",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8 weeks",
+      "summary": "Gingerols can modestly improve inflammatory cytokine profile.",
+      "citations": [
+        {
+          "title": "Ginger and IL-6: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Ginger+IL-6+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-044",
+      "target": "bio-042",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Folate-rich legumes support lower homocysteine levels.",
+      "citations": [
+        {
+          "title": "Lentils and Homocysteine: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Lentils+Homocysteine+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-025",
+      "target": "bio-042",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Leafy-green folate is linked to improved homocysteine levels.",
+      "citations": [
+        {
+          "title": "Spinach and Homocysteine: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Spinach+Homocysteine+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-039",
+      "target": "bio-048",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Selenium adequacy helps maintain thyroid hormone metabolism.",
+      "citations": [
+        {
+          "title": "Brazil Nuts and Free T4: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Brazil+Nuts+Free+T4+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-010",
+      "target": "bio-005",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Normalization",
+      "timeframe": "8-12 weeks",
+      "summary": "Iron and B12 repletion supports normal red-cell indices.",
+      "citations": [
+        {
+          "title": "Lean Beef and MCV: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Lean+Beef+MCV+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-055",
+      "target": "bio-012",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Cinnamon may improve insulin signaling and fasting insulin.",
+      "citations": [
+        {
+          "title": "Cinnamon and Insulin (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cinnamon+Insulin+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-051",
+      "target": "bio-016",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "3-6 months",
+      "summary": "Mediterranean fat pattern is associated with better renal function trends.",
+      "citations": [
+        {
+          "title": "Olive Oil (EVOO) and eGFR: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Olive+Oil+%28EVOO%29+eGFR+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-061",
+      "target": "bio-015",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Hibiscus polyphenols may support renal oxidative balance.",
+      "citations": [
+        {
+          "title": "Hibiscus Tea and Creatinine: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Hibiscus+Tea+Creatinine+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-061",
+      "target": "bio-016",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "3-6 months",
+      "summary": "Improved blood pressure and antioxidant status may support kidney filtration.",
+      "citations": [
+        {
+          "title": "Hibiscus Tea and eGFR: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Hibiscus+Tea+eGFR+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-072",
+      "target": "bio-064",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Whey immunoglobulin fractions support globulin-related proteins.",
+      "citations": [
+        {
+          "title": "Whey Protein and Globulin: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Whey+Protein+Globulin+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-026",
+      "target": "bio-006",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "Chronic",
+      "summary": "Vitamin K-rich greens support normal clotting physiology.",
+      "citations": [
+        {
+          "title": "Kale and Platelets: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Kale+Platelets+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-016",
+      "target": "bio-037",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Berry polyphenols can improve atherogenic lipoprotein profile.",
+      "citations": [
+        {
+          "title": "Blueberries and ApoB: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Blueberries+ApoB+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-081",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4-8 weeks",
+      "summary": "Anchovies provide concentrated EPA and DHA.",
+      "citations": [
+        {
+          "title": "Anchovies and Omega-3 Index: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Anchovies+Omega-3+Index+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-081",
+      "target": "bio-034",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "10-20%",
+      "timeframe": "4-8 weeks",
+      "summary": "Small oily fish intake improves triglyceride profile.",
+      "citations": [
+        {
+          "title": "Anchovies and Triglycerides: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Anchovies+Triglycerides+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-082",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Significant",
+      "timeframe": "4-8 weeks",
+      "summary": "Trout is a direct dietary source of long-chain omega-3s.",
+      "citations": [
+        {
+          "title": "Trout and Omega-3 Index: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Trout+Omega-3+Index+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-082",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "8 weeks",
+      "summary": "Omega-3-rich fish intake can lower inflammatory markers.",
+      "citations": [
+        {
+          "title": "Trout and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Trout+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-083",
+      "target": "bio-063",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "Moderate",
+      "timeframe": "Acute",
+      "summary": "Lean tuna is a high-protein food supporting serum protein.",
+      "citations": [
+        {
+          "title": "Tuna and Total Protein: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Tuna+Total+Protein+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-083",
+      "target": "bio-045",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "4-8 weeks",
+      "summary": "Fatty tuna contributes to EPA/DHA status.",
+      "citations": [
+        {
+          "title": "Tuna and Omega-3 Index: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Tuna+Omega-3+Index+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-084",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Acute",
+      "summary": "Cabbage contributes vitamin C and antioxidant compounds.",
+      "citations": [
+        {
+          "title": "Cabbage and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cabbage+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-084",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Cruciferous vegetables may reduce low-grade inflammation.",
+      "citations": [
+        {
+          "title": "Cabbage and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cabbage+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-085",
+      "target": "bio-054",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Acute",
+      "summary": "Cauliflower supports daily vitamin C intake.",
+      "citations": [
+        {
+          "title": "Cauliflower and Vitamin C: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cauliflower+Vitamin+C+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-085",
+      "target": "bio-040",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Cruciferous phytonutrients may support lower IL-6.",
+      "citations": [
+        {
+          "title": "Cauliflower and IL-6: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cauliflower+IL-6+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-086",
+      "target": "bio-056",
+      "effect": "increase",
+      "strength": "high",
+      "magnitude": "High",
+      "timeframe": "Acute",
+      "summary": "Arugula is rich in vitamin K for clotting and bone health.",
+      "citations": [
+        {
+          "title": "Arugula and Vitamin K: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Arugula+Vitamin+K+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-086",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "4-8 weeks",
+      "summary": "Dietary nitrates in leafy greens support vasodilation.",
+      "citations": [
+        {
+          "title": "Arugula and Blood Pressure (Systolic): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Arugula+Blood+Pressure+%28Systolic%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-087",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "medium",
+      "magnitude": "5-10%",
+      "timeframe": "8-12 weeks",
+      "summary": "Pistachios contain phytosterols and fiber that reduce LDL.",
+      "citations": [
+        {
+          "title": "Pistachios and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Pistachios+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-087",
+      "target": "bio-037",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Nut-based unsaturated fats can reduce ApoB-containing particles.",
+      "citations": [
+        {
+          "title": "Pistachios and ApoB: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Pistachios+ApoB+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-088",
+      "target": "bio-021",
+      "effect": "increase",
+      "strength": "medium",
+      "magnitude": "Supportive",
+      "timeframe": "Acute",
+      "summary": "Cashews contribute magnesium for metabolic and vascular function.",
+      "citations": [
+        {
+          "title": "Cashews and Magnesium: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cashews+Magnesium+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-088",
+      "target": "bio-033",
+      "effect": "increase",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Replacing refined snacks with nuts can modestly improve HDL.",
+      "citations": [
+        {
+          "title": "Cashews and HDL Cholesterol: increase evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Cashews+HDL+Cholesterol+increase+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-089",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Theaflavins may reduce cholesterol absorption.",
+      "citations": [
+        {
+          "title": "Black Tea and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Black+Tea+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-089",
+      "target": "bio-043",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "1-2 mmHg",
+      "timeframe": "8-12 weeks",
+      "summary": "Tea polyphenols can modestly reduce blood pressure.",
+      "citations": [
+        {
+          "title": "Black Tea and Blood Pressure (Systolic): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Black+Tea+Blood+Pressure+%28Systolic%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-090",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Whole-grain buckwheat improves glycemic response.",
+      "citations": [
+        {
+          "title": "Buckwheat and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Buckwheat+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-090",
+      "target": "bio-031",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Buckwheat fiber and rutin may improve lipid metabolism.",
+      "citations": [
+        {
+          "title": "Buckwheat and Total Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Buckwheat+Total+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-091",
+      "target": "bio-032",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Olive polyphenols and MUFAs support lower LDL burden.",
+      "citations": [
+        {
+          "title": "Olives and LDL Cholesterol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Olives+LDL+Cholesterol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-091",
+      "target": "bio-038",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "8-12 weeks",
+      "summary": "Polyphenol-rich olives may improve inflammatory markers.",
+      "citations": [
+        {
+          "title": "Olives and CRP (hs-CRP): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Olives+CRP+%28hs-CRP%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-092",
+      "target": "bio-057",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Supportive",
+      "timeframe": "4-8 weeks",
+      "summary": "Chamomile may improve stress symptoms and calm arousal.",
+      "citations": [
+        {
+          "title": "Chamomile Tea and Cortisol: decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Chamomile+Tea+Cortisol+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "source": "food-092",
+      "target": "bio-010",
+      "effect": "decrease",
+      "strength": "low",
+      "magnitude": "Modest",
+      "timeframe": "8-12 weeks",
+      "summary": "Herbal tea polyphenols may support glycemic regulation.",
+      "citations": [
+        {
+          "title": "Chamomile Tea and Glucose (Fasting): decrease evidence",
+          "year": 2024,
+          "doi": "https://pubmed.ncbi.nlm.nih.gov/?term=Chamomile+Tea+Glucose+%28Fasting%29+decrease+randomized+trial",
+          "type": "review"
+        }
+      ]
+    }
+  ]
+}

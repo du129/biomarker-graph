@@ -1,8 +1,8 @@
 import json
 import os
+from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from typing import List
 
 app = FastAPI(title="BioNutriGraph API")
 
@@ -21,13 +21,31 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load Data
-DATA_PATH = os.path.join(os.path.dirname(__file__), "../frontend/src/data/mvp_dataset.json")
+BASE_DIR = Path(__file__).resolve().parent
+
+
+def resolve_data_path() -> Path | None:
+    env_path = os.getenv("DATA_PATH")
+    candidates = []
+    if env_path:
+        candidates.append(Path(env_path).expanduser())
+    candidates.extend(
+        [
+            BASE_DIR / "data" / "mvp_dataset.json",
+            BASE_DIR.parent / "frontend" / "src" / "data" / "mvp_dataset.json",
+        ]
+    )
+
+    for path in candidates:
+        if path.exists():
+            return path
+    return None
 
 def get_graph_data():
-    if not os.path.exists(DATA_PATH):
+    data_path = resolve_data_path()
+    if not data_path:
         return {"nodes": [], "links": []}
-    with open(DATA_PATH, "r") as f:
+    with data_path.open("r", encoding="utf-8") as f:
         return json.load(f)
 
 @app.get("/")
