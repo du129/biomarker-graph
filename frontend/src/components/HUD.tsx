@@ -53,7 +53,7 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData 
     return (
         <>
             {/* ── Search Bar — top center ──────────────────────── */}
-            <div className="absolute top-3 md:top-5 left-1/2 -translate-x-1/2 z-30 w-[min(620px,calc(100vw-1rem))] pointer-events-auto">
+            <div className="absolute top-3 md:top-5 left-1/2 -translate-x-1/2 z-20 w-[min(620px,calc(100vw-1rem))] pointer-events-auto">
                 <form onSubmit={handleSearchSubmit} className="relative group">
                     <div className="absolute inset-0 bg-blue-500/15 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
                     <input

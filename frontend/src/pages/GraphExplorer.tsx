@@ -377,7 +377,7 @@ export default function GraphExplorer() {
     return (
         <div className="relative w-full h-full overflow-hidden" id="graph-container">
             {controlsCollapsed ? (
-                <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20 w-[72px] pointer-events-auto">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 z-30 w-[72px] pointer-events-auto">
                     <div className="glass-panel-strong rounded-2xl p-2.5 flex flex-col items-center gap-2.5">
                         <button
                             onClick={() => setControlsCollapsed(false)}
@@ -408,7 +408,7 @@ export default function GraphExplorer() {
                     </div>
                 </div>
             ) : (
-                <div className="absolute top-2 left-2 right-2 md:top-4 md:left-4 md:right-auto z-20 md:w-[min(350px,calc(100vw-2rem))] h-[64vh] max-h-[540px] md:h-[min(82dvh,700px)] pointer-events-auto">
+                <div className="absolute top-2 left-2 right-2 md:top-4 md:left-4 md:right-auto z-30 md:w-[min(350px,calc(100vw-2rem))] h-[64vh] max-h-[540px] md:h-[min(82dvh,700px)] pointer-events-auto">
                     <div className="glass-panel-strong rounded-3xl h-full p-3.5 md:p-4 flex flex-col">
                         <div className="rounded-2xl border border-white/12 bg-white/[0.03] px-3 py-3">
                             <div className="flex items-start justify-between">
