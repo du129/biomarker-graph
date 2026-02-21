@@ -19,22 +19,35 @@ const NAV_ITEMS: Array<{
 
 export default function Layout() {
     const [collapsed, setCollapsed] = useState(false);
+    const [mobileNavOpen, setMobileNavOpen] = useState(false);
+    const isNavCompact = collapsed && !mobileNavOpen;
 
     const navItemClass = ({ isActive }: { isActive: boolean }) =>
-        `group relative flex items-center gap-3 rounded-2xl transition-all duration-200 border px-3.5 ${collapsed ? 'justify-center py-3' : 'py-3.5'} ${isActive
+        `group relative flex items-center gap-3 rounded-2xl transition-all duration-200 border px-3.5 ${isNavCompact ? 'justify-center py-3' : 'py-3.5'} ${isActive
             ? 'bg-gradient-to-r from-cyan-500/16 to-blue-500/14 text-white border-cyan-300/30 shadow-[0_10px_25px_rgba(13,40,76,0.4)]'
             : 'text-white/82 border-transparent hover:border-white/20 hover:bg-white/[0.12] hover:text-white'}`;
 
     return (
-        <div className="flex h-screen bg-transparent w-full overflow-hidden">
-            <aside className={`flex float-up flex-col flex-shrink-0 soft-divider border-r glass-panel-strong transition-all duration-300 ${collapsed ? 'w-24' : 'w-[340px]'}`}>
-                <div className={`soft-divider border-b ${collapsed ? 'px-4 py-5' : 'p-5'}`}>
-                    <div className={`rounded-2xl border border-white/10 bg-white/[0.03] ${collapsed ? 'px-2.5 py-3.5' : 'px-4 py-4'}`}>
-                        <div className={`flex items-center ${collapsed ? 'justify-center' : 'gap-3'}`}>
+        <div className="flex h-dvh bg-transparent w-full overflow-hidden">
+            {mobileNavOpen && (
+                <button
+                    className="lg:hidden fixed inset-0 z-30 bg-black/50"
+                    onClick={() => setMobileNavOpen(false)}
+                    aria-label="Close navigation"
+                />
+            )}
+
+            <aside
+                className={`fixed lg:static inset-y-0 left-0 z-40 flex float-up flex-col flex-shrink-0 soft-divider border-r glass-panel-strong transition-all duration-300 w-[86vw] max-w-[320px] ${mobileNavOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 ${collapsed ? 'lg:w-24' : 'lg:w-[340px]'}`}
+                style={{ paddingTop: 'env(safe-area-inset-top)' }}
+            >
+                <div className={`soft-divider border-b ${isNavCompact ? 'px-4 py-5' : 'p-5'}`}>
+                    <div className={`rounded-2xl border border-white/10 bg-white/[0.03] ${isNavCompact ? 'px-2.5 py-3.5' : 'px-4 py-4'}`}>
+                        <div className={`flex items-center ${isNavCompact ? 'justify-center' : 'gap-3'}`}>
                             <div className="relative h-11 w-11 rounded-xl bg-gradient-to-br from-teal-300 via-cyan-400 to-blue-600 shadow-lg shadow-blue-500/30 flex-shrink-0">
                                 <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-emerald-300 pulse-dot" />
                             </div>
-                            {!collapsed && (
+                            {!isNavCompact && (
                                 <div className="min-w-0">
                                     <p className="app-heading text-2xl bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-300 leading-none">BioNutri</p>
                                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/75 mt-1">Nutrition Intelligence</p>
@@ -44,23 +57,29 @@ export default function Layout() {
                     </div>
                 </div>
 
-                <nav className={`flex-1 overflow-y-auto hide-scrollbar ${collapsed ? 'p-3' : 'p-4'}`}>
-                    {!collapsed && (
+                <nav className={`flex-1 overflow-y-auto hide-scrollbar ${isNavCompact ? 'p-3' : 'p-4'}`}>
+                    {!isNavCompact && (
                         <p className="px-2.5 mb-2 text-xs uppercase tracking-[0.16em] text-white/70 font-semibold">Main Views</p>
                     )}
                     <div className="space-y-2">
                         {NAV_ITEMS.map(item => {
                             const Icon = item.icon;
                             return (
-                                <NavLink key={item.to} to={item.to} className={navItemClass} title={collapsed ? item.label : undefined}>
+                                <NavLink
+                                    key={item.to}
+                                    to={item.to}
+                                    className={navItemClass}
+                                    title={isNavCompact ? item.label : undefined}
+                                    onClick={() => setMobileNavOpen(false)}
+                                >
                                     {({ isActive }) => (
                                         <>
-                                            <span className={`rounded-xl flex items-center justify-center transition-colors ${collapsed ? 'w-10 h-10' : 'w-11 h-11'} ${isActive
+                                            <span className={`rounded-xl flex items-center justify-center transition-colors ${isNavCompact ? 'w-10 h-10' : 'w-11 h-11'} ${isActive
                                                 ? 'bg-cyan-300/20 text-cyan-100'
                                                 : 'bg-white/[0.04] text-white/55 group-hover:bg-white/10 group-hover:text-white/80'}`}>
                                                 <Icon className="w-5 h-5 flex-shrink-0" />
                                             </span>
-                                            {!collapsed && (
+                                            {!isNavCompact && (
                                                 <>
                                                     <span className="flex-1 min-w-0">
                                                         <span className="block text-[15px] font-semibold leading-tight">{item.label}</span>
@@ -77,8 +96,8 @@ export default function Layout() {
                     </div>
                 </nav>
 
-                <div className={`border-t soft-divider ${collapsed ? 'p-3 space-y-2.5' : 'p-4 space-y-3'}`}>
-                    {!collapsed && (
+                <div className={`border-t soft-divider ${isNavCompact ? 'p-3 space-y-2.5' : 'p-4 space-y-3'}`}>
+                    {!isNavCompact && (
                         <div className="glass-panel rounded-2xl px-4 py-3.5 space-y-3">
                             <div className="flex items-center justify-between">
                                 <div className="flex items-center gap-2">
@@ -91,8 +110,14 @@ export default function Layout() {
                         </div>
                     )}
                     <button
+                        onClick={() => setMobileNavOpen(false)}
+                        className="lg:hidden w-full flex items-center justify-center rounded-xl transition-colors border h-12 text-white/70 hover:text-white border-white/10 hover:bg-white/10"
+                    >
+                        Close Menu
+                    </button>
+                    <button
                         onClick={() => setCollapsed(!collapsed)}
-                        className={`w-full flex items-center justify-center rounded-xl transition-colors border ${collapsed ? 'h-11' : 'h-12'} text-white/55 hover:text-white border-white/10 hover:bg-white/10`}
+                        className={`hidden lg:flex w-full items-center justify-center rounded-xl transition-colors border ${collapsed ? 'h-11' : 'h-12'} text-white/55 hover:text-white border-white/10 hover:bg-white/10`}
                         title={collapsed ? 'Expand panel' : 'Collapse panel'}
                     >
                         {collapsed ? <PanelLeftOpen className="w-5 h-5" /> : <PanelLeftClose className="w-5 h-5" />}
@@ -100,8 +125,28 @@ export default function Layout() {
                 </div>
             </aside>
 
-            <div className="flex-1 h-full overflow-hidden relative">
-                <Outlet />
+            <div className="flex-1 min-w-0 h-full overflow-hidden relative flex flex-col">
+                <div
+                    className="lg:hidden shrink-0 px-3 pb-1"
+                    style={{ paddingTop: 'max(0.75rem, env(safe-area-inset-top))' }}
+                >
+                    <div className="glass-panel-strong rounded-2xl border border-white/10 px-3 py-2.5 flex items-center gap-2">
+                        <button
+                            onClick={() => setMobileNavOpen(true)}
+                            className="h-11 w-11 rounded-xl bg-white/[0.06] hover:bg-white/[0.14] border border-white/10 text-white/85 flex items-center justify-center transition-colors"
+                            aria-label="Open navigation"
+                        >
+                            <PanelLeftOpen className="w-5 h-5" />
+                        </button>
+                        <div className="min-w-0">
+                            <p className="text-sm font-semibold text-white truncate">BioNutriGraph</p>
+                            <p className="text-xs text-white/60 truncate">Navigation</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex-1 min-h-0 overflow-hidden">
+                    <Outlet />
+                </div>
             </div>
         </div>
     );

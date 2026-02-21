@@ -16,7 +16,7 @@
 }
 
 html {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
@@ -27,7 +27,7 @@ body {
   font-family: 'Plus Jakarta Sans', 'Manrope', 'Inter', 'Segoe UI', sans-serif;
   font-size: 1rem;
   line-height: 1.55;
-  overflow: hidden;
+  overflow-x: hidden;
 
   /* Atmospheric but restrained background pattern */
   background-image:
@@ -42,7 +42,8 @@ body {
 
 #root {
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
+  height: 100dvh;
 }
 
 * {
@@ -133,6 +134,7 @@ textarea {
 .page-shell {
   height: 100%;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: clamp(1.1rem, 2.4vw, 2.6rem);
 }
 
@@ -164,45 +166,23 @@ textarea {
   background: rgba(255, 255, 255, 0.14);
 }
 
-/* Global readability pass for small utility text sizes */
-.text-xs {
-  font-size: 1rem !important;
-  line-height: 1.45rem !important;
-}
-
-.text-sm {
-  font-size: 1.1rem !important;
-  line-height: 1.6rem !important;
-}
-
-.text-base {
-  font-size: 1.2rem !important;
-  line-height: 1.75rem !important;
-}
-
-.text-lg {
-  font-size: 1.34rem !important;
-  line-height: 1.9rem !important;
-}
-
-.text-\[10px\] {
-  font-size: 0.92rem !important;
-  line-height: 1.35rem !important;
-}
-
-.text-\[11px\] {
-  font-size: 1rem !important;
-  line-height: 1.45rem !important;
-}
-
-.text-\[15px\] {
-  font-size: 1.12rem !important;
-  line-height: 1.6rem !important;
-}
-
 @media (max-width: 900px) {
-  html {
-    font-size: 18px;
+  body {
+    background-attachment: scroll;
+  }
+
+  .page-shell {
+    padding-top: calc(0.9rem + env(safe-area-inset-top));
+    padding-right: calc(0.9rem + env(safe-area-inset-right));
+    padding-bottom: calc(0.9rem + env(safe-area-inset-bottom));
+    padding-left: calc(0.9rem + env(safe-area-inset-left));
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    min-height: 44px;
   }
 }
 

@@ -103,7 +103,7 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData 
 
             {/* ── Detail Panel — right side ────────────────────── */}
             {selectedNode && (
-                <div className="absolute top-4 right-4 z-20 w-[520px] max-w-[calc(100vw-360px)] h-[calc(100%-32px)] pointer-events-auto overflow-y-auto hide-scrollbar">
+                <div className="absolute top-2 left-2 right-2 z-20 h-[calc(100%-16px)] pointer-events-auto overflow-y-auto hide-scrollbar md:top-4 md:left-auto md:right-4 md:w-[520px] md:max-w-[calc(100vw-360px)] md:h-[calc(100%-32px)]">
                     <div className="glass-panel-strong rounded-2xl p-5 float-up">
 
                         {/* Header */}
@@ -120,7 +120,7 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData 
                             </div>
                             <button
                                 onClick={onClose}
-                                className="p-1.5 bg-white/5 hover:bg-white/15 rounded-lg transition-all"
+                                className="h-11 w-11 bg-white/5 hover:bg-white/15 rounded-lg transition-all flex items-center justify-center"
                             >
                                 <X className="w-4 h-4 text-white/50 hover:text-white" />
                             </button>

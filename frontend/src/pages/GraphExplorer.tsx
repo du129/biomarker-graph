@@ -42,6 +42,12 @@ export default function GraphExplorer() {
     const [groupSearch, setGroupSearch] = useState('');
     const [controlsCollapsed, setControlsCollapsed] = useState(false);
 
+    useEffect(() => {
+        if (window.matchMedia('(max-width: 1023px)').matches) {
+            setControlsCollapsed(true);
+        }
+    }, []);
+
     /* ── Data fetch + resize ───────────────────────────────────── */
     useEffect(() => {
         const container = document.getElementById('graph-container');
@@ -377,25 +383,25 @@ export default function GraphExplorer() {
     return (
         <div className="relative w-full h-full overflow-hidden" id="graph-container">
             {controlsCollapsed ? (
-                <div className="absolute top-4 left-4 z-20 w-[72px] pointer-events-auto">
+                <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20 w-[72px] pointer-events-auto">
                     <div className="glass-panel-strong rounded-2xl p-2.5 flex flex-col items-center gap-2.5">
                         <button
                             onClick={() => setControlsCollapsed(false)}
-                            className="w-full h-10 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-white/80 flex items-center justify-center transition-colors"
+                            className="w-full h-11 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 text-white/80 flex items-center justify-center transition-colors"
                             title="Expand controls"
                         >
                             <PanelLeftOpen className="w-4 h-4" />
                         </button>
                         <button
                             onClick={() => setShowLabels(!showLabels)}
-                            className="w-full h-10 rounded-xl hover:bg-white/10 text-white/60 hover:text-white/90 transition-colors flex items-center justify-center"
+                            className="w-full h-11 rounded-xl hover:bg-white/10 text-white/60 hover:text-white/90 transition-colors flex items-center justify-center"
                             title={showLabels ? 'Hide labels' : 'Show labels'}
                         >
                             {showLabels ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
                         </button>
                         <button
                             onClick={resetView}
-                            className="w-full h-10 rounded-xl hover:bg-white/10 text-white/60 hover:text-white/90 transition-colors flex items-center justify-center"
+                            className="w-full h-11 rounded-xl hover:bg-white/10 text-white/60 hover:text-white/90 transition-colors flex items-center justify-center"
                             title="Reset view"
                         >
                             <RotateCcw className="w-4 h-4" />
@@ -408,7 +414,7 @@ export default function GraphExplorer() {
                     </div>
                 </div>
             ) : (
-                <div className="absolute top-4 left-4 z-20 w-[min(420px,calc(100vw-2rem))] h-[calc(100%-32px)] pointer-events-auto">
+                <div className="absolute top-2 left-2 right-2 md:top-4 md:left-4 md:right-auto z-20 md:w-[min(420px,calc(100vw-2rem))] h-[70vh] max-h-[640px] md:h-[calc(100%-32px)] pointer-events-auto">
                     <div className="glass-panel-strong rounded-3xl h-full p-4 xl:p-5 flex flex-col">
                         <div className="rounded-2xl border border-white/12 bg-white/[0.03] px-4 py-3.5">
                             <div className="flex items-start justify-between">
@@ -418,7 +424,7 @@ export default function GraphExplorer() {
                                 </div>
                                 <button
                                     onClick={() => setControlsCollapsed(true)}
-                                    className="h-10 w-10 rounded-xl bg-white/[0.04] hover:bg-white/[0.11] text-white/70 hover:text-white transition-colors flex items-center justify-center border border-white/10"
+                                    className="h-11 w-11 rounded-xl bg-white/[0.04] hover:bg-white/[0.11] text-white/70 hover:text-white transition-colors flex items-center justify-center border border-white/10"
                                     title="Collapse controls"
                                 >
                                     <PanelLeftClose className="w-4 h-4" />
