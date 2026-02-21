@@ -53,14 +53,14 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData 
     return (
         <>
             {/* ── Search Bar — top center ──────────────────────── */}
-            <div className="absolute top-5 left-1/2 -translate-x-1/2 z-30 w-[min(740px,calc(100vw-2rem))] pointer-events-auto">
+            <div className="absolute top-3 md:top-5 left-1/2 -translate-x-1/2 z-30 w-[min(620px,calc(100vw-1rem))] pointer-events-auto">
                 <form onSubmit={handleSearchSubmit} className="relative group">
                     <div className="absolute inset-0 bg-blue-500/15 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
                     <input
                         ref={searchInputRef}
                         type="text"
                         placeholder="Search foods or biomarkers…"
-                        className="relative w-full glass-panel-strong rounded-2xl py-4 px-12 pr-24 text-[17px] text-white placeholder-white/35 focus:outline-none focus:border-blue-500/40 focus:ring-1 focus:ring-blue-500/30 transition-all shadow-lg"
+                        className="relative w-full glass-panel-strong rounded-2xl py-3 px-11 pr-20 text-base text-white placeholder-white/35 focus:outline-none focus:border-blue-500/40 focus:ring-1 focus:ring-blue-500/30 transition-all shadow-lg"
                         value={searchQuery}
                         onChange={(e) => {
                             setSearchQuery(e.target.value);
@@ -68,13 +68,13 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData 
                         }}
                         onFocus={() => setShowSearchResults(true)}
                     />
-                    <Search className="absolute left-4 top-[18px] w-5 h-5 text-white/45" />
-                    <span className="absolute right-4 top-4 text-sm px-2.5 py-1 rounded-md border border-white/10 text-white/55 bg-black/40">/</span>
+                    <Search className="absolute left-4 top-3.5 w-4 h-4 text-white/45" />
+                    <span className="absolute right-4 top-3 text-xs px-2 py-1 rounded-md border border-white/10 text-white/55 bg-black/40">/</span>
                 </form>
 
                 {/* Dropdown */}
                 {showSearchResults && searchQuery && (
-                    <div className="absolute top-14 left-0 w-full glass-panel rounded-2xl overflow-hidden max-h-[380px] overflow-y-auto">
+                    <div className="absolute top-12 left-0 w-full glass-panel rounded-2xl overflow-hidden max-h-[320px] overflow-y-auto">
                         <div className="px-4 py-2.5 border-b border-white/10 text-sm text-white/60">
                             {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
                         </div>
@@ -103,7 +103,7 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData 
 
             {/* ── Detail Panel — right side ────────────────────── */}
             {selectedNode && (
-                <div className="absolute top-2 left-2 right-2 z-20 h-[calc(100%-16px)] pointer-events-auto overflow-y-auto hide-scrollbar md:top-4 md:left-auto md:right-4 md:w-[520px] md:max-w-[calc(100vw-360px)] md:h-[calc(100%-32px)]">
+                <div className="absolute top-2 left-2 right-2 z-20 h-[calc(100%-16px)] pointer-events-auto overflow-y-auto hide-scrollbar md:top-4 md:left-auto md:right-4 md:w-[440px] md:max-w-[calc(100vw-380px)] md:h-[calc(100%-32px)]">
                     <div className="glass-panel-strong rounded-2xl p-5 float-up">
 
                         {/* Header */}

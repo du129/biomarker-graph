@@ -40,13 +40,7 @@ export default function GraphExplorer() {
     const [filterGroup, setFilterGroup] = useState<string | null>(null);
     const [showLabels, setShowLabels] = useState(true);
     const [groupSearch, setGroupSearch] = useState('');
-    const [controlsCollapsed, setControlsCollapsed] = useState(false);
-
-    useEffect(() => {
-        if (window.matchMedia('(max-width: 1023px)').matches) {
-            setControlsCollapsed(true);
-        }
-    }, []);
+    const [controlsCollapsed, setControlsCollapsed] = useState(true);
 
     /* ── Data fetch + resize ───────────────────────────────────── */
     useEffect(() => {
@@ -414,13 +408,13 @@ export default function GraphExplorer() {
                     </div>
                 </div>
             ) : (
-                <div className="absolute top-2 left-2 right-2 md:top-4 md:left-4 md:right-auto z-20 md:w-[min(420px,calc(100vw-2rem))] h-[70vh] max-h-[640px] md:h-[calc(100%-32px)] pointer-events-auto">
-                    <div className="glass-panel-strong rounded-3xl h-full p-4 xl:p-5 flex flex-col">
-                        <div className="rounded-2xl border border-white/12 bg-white/[0.03] px-4 py-3.5">
+                <div className="absolute top-2 left-2 right-2 md:top-4 md:left-4 md:right-auto z-20 md:w-[min(350px,calc(100vw-2rem))] h-[64vh] max-h-[540px] md:h-[min(82dvh,700px)] pointer-events-auto">
+                    <div className="glass-panel-strong rounded-3xl h-full p-3.5 md:p-4 flex flex-col">
+                        <div className="rounded-2xl border border-white/12 bg-white/[0.03] px-3 py-3">
                             <div className="flex items-start justify-between">
                                 <div>
                                     <p className="text-xs uppercase tracking-[0.14em] text-cyan-200/85 font-semibold mb-1">Graph HUD</p>
-                                    <p className="text-white text-xl font-semibold leading-tight">Navigation & Filters</p>
+                                    <p className="text-white text-lg font-semibold leading-tight">Navigation & Filters</p>
                                 </div>
                                 <button
                                     onClick={() => setControlsCollapsed(true)}
@@ -430,40 +424,40 @@ export default function GraphExplorer() {
                                     <PanelLeftClose className="w-4 h-4" />
                                 </button>
                             </div>
-                            <div className="mt-3.5 grid grid-cols-3 gap-2">
-                                <div className="rounded-xl border border-white/10 bg-black/20 px-3 py-2">
+                            <div className="mt-3 grid grid-cols-3 gap-1.5">
+                                <div className="rounded-xl border border-white/10 bg-black/20 px-2.5 py-2">
                                     <p className="text-xs uppercase tracking-[0.12em] text-white/55">Foods</p>
-                                    <p className="text-base font-semibold text-white/90">{visibleFoods}</p>
+                                    <p className="text-sm font-semibold text-white/90">{visibleFoods}</p>
                                 </div>
-                                <div className="rounded-xl border border-white/10 bg-black/20 px-3 py-2">
+                                <div className="rounded-xl border border-white/10 bg-black/20 px-2.5 py-2">
                                     <p className="text-xs uppercase tracking-[0.12em] text-white/55">Biomarkers</p>
-                                    <p className="text-base font-semibold text-white/90">{visibleBiomarkers}</p>
+                                    <p className="text-sm font-semibold text-white/90">{visibleBiomarkers}</p>
                                 </div>
-                                <div className="rounded-xl border border-white/10 bg-black/20 px-3 py-2">
+                                <div className="rounded-xl border border-white/10 bg-black/20 px-2.5 py-2">
                                     <p className="text-xs uppercase tracking-[0.12em] text-white/55">Links</p>
-                                    <p className="text-base font-semibold text-white/90">{filteredData.links.length}</p>
+                                    <p className="text-sm font-semibold text-white/90">{filteredData.links.length}</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-3 grid grid-cols-2 gap-2">
+                        <div className="mt-2.5 grid grid-cols-2 gap-2">
                             <button
                                 onClick={() => setShowLabels(!showLabels)}
-                                className="rounded-xl px-3.5 py-2.5 text-sm bg-white/[0.04] border border-white/10 text-white/75 hover:text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
+                                className="rounded-xl px-2.5 py-2 text-xs bg-white/[0.04] border border-white/10 text-white/75 hover:text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-1.5"
                             >
                                 {showLabels ? <Eye className="w-4 h-4" /> : <EyeOff className="w-4 h-4" />}
                                 {showLabels ? 'Labels On' : 'Labels Off'}
                             </button>
                             <button
                                 onClick={resetView}
-                                className="rounded-xl px-3.5 py-2.5 text-sm bg-white/[0.04] border border-white/10 text-white/75 hover:text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
+                                className="rounded-xl px-2.5 py-2 text-xs bg-white/[0.04] border border-white/10 text-white/75 hover:text-white hover:bg-white/10 transition-colors flex items-center justify-center gap-1.5"
                             >
                                 <RotateCcw className="w-4 h-4" />
                                 Reset View
                             </button>
                         </div>
 
-                        <section className="mt-3.5 rounded-2xl border border-white/10 bg-white/[0.02] p-3.5 flex-1 min-h-0 flex flex-col">
+                        <section className="mt-3 rounded-2xl border border-white/10 bg-white/[0.02] p-3 flex-1 min-h-0 flex flex-col">
                             <p className="text-xs uppercase tracking-[0.14em] text-white/55 font-bold mb-2">View Mode</p>
                             <div className="grid grid-cols-3 gap-2">
                                 {([
@@ -477,7 +471,7 @@ export default function GraphExplorer() {
                                         <button
                                             key={option.key}
                                             onClick={() => { setFilterType(option.key); setFilterGroup(null); setSelectedNode(null); }}
-                                            className={`rounded-xl px-2.5 py-2.5 text-sm font-semibold flex items-center justify-center gap-2 transition-all border ${active
+                                            className={`rounded-xl px-2 py-2 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all border ${active
                                                 ? 'bg-cyan-500/18 text-cyan-100 border-cyan-300/30'
                                                 : 'bg-white/[0.04] text-white/55 border-white/10 hover:bg-white/10 hover:text-white/85'}`}
                                         >
@@ -493,21 +487,21 @@ export default function GraphExplorer() {
                                     value={groupSearch}
                                     onChange={(e) => setGroupSearch(e.target.value)}
                                     placeholder="Search categories..."
-                                    className="w-full rounded-xl bg-white/[0.04] border border-white/10 py-2.5 pl-9 pr-3 text-base text-white placeholder-white/45 focus:outline-none focus:border-cyan-400/40"
+                                    className="w-full rounded-xl bg-white/[0.04] border border-white/10 py-2 pl-8 pr-3 text-sm text-white placeholder-white/45 focus:outline-none focus:border-cyan-400/40"
                                 />
                                 <Search className="absolute left-3 top-3 w-4 h-4 text-white/35" />
                             </div>
 
                             <button
                                 onClick={() => { setFilterGroup(null); setSelectedNode(null); }}
-                                className={`mt-2.5 w-full rounded-xl px-3 py-2.5 text-left text-base transition-all border ${!filterGroup
+                                className={`mt-2.5 w-full rounded-xl px-3 py-2 text-left text-sm transition-all border ${!filterGroup
                                     ? 'bg-white/12 border-white/25 text-white font-semibold'
                                     : 'bg-white/[0.04] border-white/10 text-white/60 hover:bg-white/10 hover:text-white/85'}`}
                             >
                                 Show All Categories
                             </button>
 
-                            <div className="mt-3 min-h-0 flex-1 overflow-y-auto hide-scrollbar pr-1 space-y-3">
+                            <div className="mt-3 min-h-0 flex-1 overflow-y-auto hide-scrollbar pr-1 space-y-2.5">
                                 {(filterType === 'all' || filterType === 'food') && (
                                     <div className="space-y-1.5">
                                         <p className="text-xs uppercase tracking-[0.12em] text-blue-200/80 font-semibold px-1">Food Groups</p>
@@ -515,13 +509,13 @@ export default function GraphExplorer() {
                                             <button
                                                 key={g}
                                                 onClick={() => { setFilterGroup(g === filterGroup ? null : g); setSelectedNode(null); }}
-                                                className={`w-full rounded-lg px-2.5 py-2 text-base text-left transition-all border flex items-center gap-2 ${g === filterGroup
+                                                className={`w-full rounded-lg px-2.5 py-2 text-sm text-left transition-all border flex items-center gap-2 ${g === filterGroup
                                                     ? 'bg-blue-500/20 border-blue-300/35 text-blue-100'
                                                     : 'bg-white/[0.04] border-white/10 text-white/65 hover:bg-white/10 hover:text-white/85'}`}
                                             >
                                                 <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FOOD_GROUP_COLORS[g] || '#888' }} />
                                                 <span className="truncate flex-1">{g}</span>
-                                                <span className="text-sm rounded-md border border-white/15 bg-black/25 px-1.5 py-0.5 text-white/60">{foodGroupCounts[g] || 0}</span>
+                                                <span className="text-xs rounded-md border border-white/15 bg-black/25 px-1.5 py-0.5 text-white/60">{foodGroupCounts[g] || 0}</span>
                                             </button>
                                         ))}
                                     </div>
@@ -534,13 +528,13 @@ export default function GraphExplorer() {
                                             <button
                                                 key={g}
                                                 onClick={() => { setFilterGroup(g === filterGroup ? null : g); setSelectedNode(null); }}
-                                                className={`w-full rounded-lg px-2.5 py-2 text-base text-left transition-all border flex items-center gap-2 ${g === filterGroup
+                                                className={`w-full rounded-lg px-2.5 py-2 text-sm text-left transition-all border flex items-center gap-2 ${g === filterGroup
                                                     ? 'bg-rose-500/20 border-rose-300/35 text-rose-100'
                                                     : 'bg-white/[0.04] border-white/10 text-white/65 hover:bg-white/10 hover:text-white/85'}`}
                                             >
                                                 <span className="w-2.5 h-2.5 rounded-sm flex-shrink-0" style={{ backgroundColor: BIO_GROUP_COLORS[g] || '#888' }} />
                                                 <span className="truncate flex-1">{g}</span>
-                                                <span className="text-sm rounded-md border border-white/15 bg-black/25 px-1.5 py-0.5 text-white/60">{bioGroupCounts[g] || 0}</span>
+                                                <span className="text-xs rounded-md border border-white/15 bg-black/25 px-1.5 py-0.5 text-white/60">{bioGroupCounts[g] || 0}</span>
                                             </button>
                                         ))}
                                     </div>
@@ -554,7 +548,7 @@ export default function GraphExplorer() {
                             </div>
                         </section>
 
-                        <section className="mt-3.5 rounded-2xl border border-white/10 bg-white/[0.03] px-3.5 py-3">
+                        <section className="mt-3 rounded-2xl border border-white/10 bg-white/[0.03] px-3 py-2.5">
                             <p className="text-xs uppercase tracking-[0.14em] text-white/55 font-bold mb-2">Quick Focus</p>
                             <div className="grid grid-cols-2 gap-2">
                                 <div className="space-y-1.5">
@@ -563,7 +557,7 @@ export default function GraphExplorer() {
                                         <button
                                             key={node.id}
                                             onClick={() => handleNodeClick(node)}
-                                            className="w-full px-2.5 py-1.5 text-sm rounded-lg bg-blue-500/15 border border-blue-300/25 text-blue-100 hover:bg-blue-500/25 transition-colors text-left"
+                                            className="w-full px-2.5 py-1.5 text-xs rounded-lg bg-blue-500/15 border border-blue-300/25 text-blue-100 hover:bg-blue-500/25 transition-colors text-left"
                                         >
                                             {node.label}
                                         </button>
@@ -575,14 +569,14 @@ export default function GraphExplorer() {
                                         <button
                                             key={node.id}
                                             onClick={() => handleNodeClick(node)}
-                                            className="w-full px-2.5 py-1.5 text-sm rounded-lg bg-rose-500/15 border border-rose-300/25 text-rose-100 hover:bg-rose-500/25 transition-colors text-left"
+                                            className="w-full px-2.5 py-1.5 text-xs rounded-lg bg-rose-500/15 border border-rose-300/25 text-rose-100 hover:bg-rose-500/25 transition-colors text-left"
                                         >
                                             {node.label}
                                         </button>
                                     ))}
                                 </div>
                             </div>
-                            <div className="mt-3 rounded-xl bg-black/20 border border-white/10 px-3 py-2.5 text-sm text-white/70 flex items-center justify-between">
+                            <div className="mt-2.5 rounded-xl bg-black/20 border border-white/10 px-3 py-2 text-xs text-white/70 flex items-center justify-between">
                                 <span className="flex items-center gap-1.5">
                                     <Sparkles className="w-4 h-4 text-cyan-200/80" />
                                     Active View
