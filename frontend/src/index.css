@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-deep: #081226;
+  --bg-mid: #10203a;
+  --text-main: #f3f7ff;
+  --text-dim: #bac8e4;
+  --line-soft: rgba(180, 206, 255, 0.2);
+  --panel-bg: rgba(18, 31, 55, 0.86);
+  --panel-bg-strong: rgba(16, 28, 50, 0.93);
+  --accent: #21c6a5;
+  --accent-2: #4e87ff;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', 'Manrope', 'Inter', 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  overflow: hidden;
+
+  /* Atmospheric but restrained background pattern */
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(56, 189, 248, 0.2) 0%, transparent 34%),
+    radial-gradient(circle at 88% 8%, rgba(99, 102, 241, 0.24) 0%, transparent 38%),
+    radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.05) 0%, transparent 42%),
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 38px 38px, 38px 38px;
+  background-attachment: fixed;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+.glass-panel {
+  background:
+    linear-gradient(160deg, rgba(28, 43, 73, 0.9), rgba(18, 30, 56, 0.9)),
+    var(--panel-bg);
+  border: 1px solid rgba(186, 213, 255, 0.24);
+  box-shadow:
+    0 14px 34px rgba(3, 10, 24, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.glass-panel-strong {
+  background:
+    linear-gradient(160deg, rgba(26, 40, 70, 0.94), rgba(16, 28, 50, 0.95)),
+    var(--panel-bg-strong);
+  border: 1px solid rgba(196, 220, 255, 0.28);
+  box-shadow:
+    0 16px 36px rgba(2, 8, 20, 0.33),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px);
+}
+
+.soft-divider {
+  border-color: var(--line-soft);
+}
+
+.app-heading {
+  letter-spacing: -0.03em;
+  font-weight: 750;
+}
+
+.pulse-dot {
+  position: relative;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 9999px;
+  border: 1px solid rgba(33, 198, 165, 0.45);
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes float-up {
+  from {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.float-up {
+  animation: float-up 0.35s ease-out both;
+}
+
+.page-shell {
+  height: 100%;
+  overflow-y: auto;
+  padding: clamp(1.1rem, 2.4vw, 2.6rem);
+}
+
+.page-content {
+  width: min(1600px, 100%);
+  margin: 0 auto;
+}
+
+.toolbar-input {
+  width: 100%;
+  min-height: 58px;
+  border-radius: 18px;
+  border: 1px solid rgba(189, 213, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  font-size: 1.08rem;
+  padding: 0 1rem 0 2.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.toolbar-input::placeholder {
+  color: rgba(233, 237, 247, 0.65);
+}
+
+.toolbar-input:focus {
+  outline: none;
+  border-color: rgba(116, 188, 255, 0.85);
+  box-shadow: 0 0 0 3px rgba(116, 188, 255, 0.18);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* Global readability pass for small utility text sizes */
+.text-xs {
+  font-size: 1rem !important;
+  line-height: 1.45rem !important;
+}
+
+.text-sm {
+  font-size: 1.1rem !important;
+  line-height: 1.6rem !important;
+}
+
+.text-base {
+  font-size: 1.2rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-lg {
+  font-size: 1.34rem !important;
+  line-height: 1.9rem !important;
+}
+
+.text-\[10px\] {
+  font-size: 0.92rem !important;
+  line-height: 1.35rem !important;
+}
+
+.text-\[11px\] {
+  font-size: 1rem !important;
+  line-height: 1.45rem !important;
+}
+
+.text-\[15px\] {
+  font-size: 1.12rem !important;
+  line-height: 1.6rem !important;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

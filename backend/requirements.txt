@@ -1,0 +1,6 @@
+fastapi==0.109.2
+uvicorn==0.27.1
+openai==1.12.0
+pypdf==4.0.1
+neo4j==5.17.0
+python-multipart==0.0.9
