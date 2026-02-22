@@ -505,19 +505,21 @@ export default function GraphExplorer() {
                                 {(filterType === 'all' || filterType === 'food') && (
                                     <div className="space-y-1.5">
                                         <p className="text-xs uppercase tracking-[0.12em] text-blue-200/80 font-semibold px-1">Food Groups</p>
-                                        {filteredFoodGroups.map(g => (
-                                            <button
-                                                key={g}
-                                                onClick={() => { setFilterGroup(g === filterGroup ? null : g); setSelectedNode(null); }}
-                                                className={`w-full rounded-lg px-2.5 py-2 text-sm text-left transition-all border flex items-center gap-2 ${g === filterGroup
-                                                    ? 'bg-blue-500/20 border-blue-300/35 text-blue-100'
-                                                    : 'bg-white/[0.04] border-white/10 text-white/65 hover:bg-white/10 hover:text-white/85'}`}
-                                            >
-                                                <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FOOD_GROUP_COLORS[g] || '#888' }} />
-                                                <span className="truncate flex-1">{g}</span>
-                                                <span className="text-xs rounded-md border border-white/15 bg-black/25 px-1.5 py-0.5 text-white/60">{foodGroupCounts[g] || 0}</span>
-                                            </button>
-                                        ))}
+                                        <div className="max-h-48 overflow-y-auto hide-scrollbar pr-1 space-y-1.5">
+                                            {filteredFoodGroups.map(g => (
+                                                <button
+                                                    key={g}
+                                                    onClick={() => { setFilterGroup(g === filterGroup ? null : g); setSelectedNode(null); }}
+                                                    className={`w-full rounded-lg px-2.5 py-2 text-sm text-left transition-all border flex items-center gap-2 ${g === filterGroup
+                                                        ? 'bg-blue-500/20 border-blue-300/35 text-blue-100'
+                                                        : 'bg-white/[0.04] border-white/10 text-white/65 hover:bg-white/10 hover:text-white/85'}`}
+                                                >
+                                                    <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: FOOD_GROUP_COLORS[g] || '#888' }} />
+                                                    <span className="truncate flex-1">{g}</span>
+                                                    <span className="text-xs rounded-md border border-white/15 bg-black/25 px-1.5 py-0.5 text-white/60">{foodGroupCounts[g] || 0}</span>
+                                                </button>
+                                            ))}
+                                        </div>
                                     </div>
                                 )}
 
