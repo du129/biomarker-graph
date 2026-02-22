@@ -16,6 +16,7 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData,
     const [searchQuery, setSearchQuery] = useState('');
     const [showSearchResults, setShowSearchResults] = useState(false);
     const searchInputRef = useRef<HTMLInputElement>(null);
+    const searchContainerRef = useRef<HTMLDivElement>(null);
 
     const searchResults = useMemo(() => {
         if (!searchQuery) return [];
@@ -45,6 +46,22 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData,
         return () => window.removeEventListener('keydown', handler);
     }, [selectedNode, onClose]);
 
+    useEffect(() => {
+        const outsideHandler = (event: MouseEvent | TouchEvent) => {
+            const target = event.target as globalThis.Node | null;
+            if (!target) return;
+            if (searchContainerRef.current?.contains(target)) return;
+            setShowSearchResults(false);
+        };
+
+        document.addEventListener('mousedown', outsideHandler);
+        document.addEventListener('touchstart', outsideHandler, { passive: true });
+        return () => {
+            document.removeEventListener('mousedown', outsideHandler);
+            document.removeEventListener('touchstart', outsideHandler);
+        };
+    }, []);
+
     const handleSearchSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         onSearch(searchQuery);
@@ -55,6 +72,7 @@ export function HUD({ selectedNode, selectedLinks, onClose, onSearch, graphData,
         <>
             {/* ── Search Bar — top center ──────────────────────── */}
             <div
+                ref={searchContainerRef}
                 className={`absolute top-3 md:top-5 z-20 pointer-events-auto ${leftPanelCollapsed
                     ? 'left-1/2 -translate-x-1/2 w-[min(620px,calc(100vw-1rem))]'
                     : 'left-2 right-2 md:left-[370px] md:right-4 md:translate-x-0'

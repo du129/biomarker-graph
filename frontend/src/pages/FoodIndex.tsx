@@ -52,18 +52,33 @@ export default function FoodIndex() {
     const [foods, setFoods] = useState<FoodNode[]>([]);
     const [allNodes, setAllNodes] = useState<NodeData[]>([]);
     const [links, setLinks] = useState<LinkData[]>([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
     const [search, setSearch] = useState('');
     const [selectedGroup, setSelectedGroup] = useState<string | null>(null);
     const [expandedId, setExpandedId] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch(apiUrl('/graph'))
-            .then(res => res.json())
+        const controller = new AbortController();
+
+        fetch(apiUrl('/graph'), { signal: controller.signal })
+            .then(res => {
+                if (!res.ok) throw new Error('Failed to load food index data.');
+                return res.json();
+            })
             .then(data => {
                 setFoods(data.nodes.filter((n: FoodNode) => n.type === 'food'));
                 setAllNodes(data.nodes);
                 setLinks(data.links);
-            });
+                setError(null);
+            })
+            .catch((err: Error) => {
+                if (err.name === 'AbortError') return;
+                setError(err.message || 'Unable to load food data.');
+            })
+            .finally(() => setLoading(false));
+
+        return () => controller.abort();
     }, []);
 
     const nodeMap = useMemo(() => {
@@ -101,6 +116,14 @@ export default function FoodIndex() {
                 return (strengthOrder[a.strength] ?? 3) - (strengthOrder[b.strength] ?? 3);
             });
     };
+
+    if (loading) {
+        return <div className="page-shell"><div className="page-content text-white/70">Loading food index...</div></div>;
+    }
+
+    if (error) {
+        return <div className="page-shell"><div className="page-content text-rose-200/90">{error}</div></div>;
+    }
 
     return (
         <div className="page-shell">
@@ -161,13 +184,13 @@ export default function FoodIndex() {
                             <div key={node.id} className={`border ${colors.border} rounded-2xl overflow-hidden transition-all duration-200`}>
                                 <button
                                     onClick={() => setExpandedId(isExpanded ? null : node.id)}
-                                    className={`w-full flex items-center justify-between p-6 ${colors.bg} hover:brightness-125 transition-all text-left`}
+                                    className={`w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 p-4 sm:p-6 ${colors.bg} hover:brightness-125 transition-all text-left`}
                                 >
                                     <div className="flex items-center gap-4 flex-1 min-w-0">
                                         <div className={`w-3 h-3 rounded-full ${colors.text.replace('text-', 'bg-')}`} />
-                                        <h3 className="font-bold text-xl text-white">{node.label}</h3>
+                                        <h3 className="font-bold text-lg sm:text-xl text-white">{node.label}</h3>
                                     </div>
-                                    <div className="flex items-center gap-4 flex-shrink-0">
+                                    <div className="flex w-full sm:w-auto items-center justify-between sm:justify-end gap-3 flex-shrink-0">
                                         <span className={`text-xs uppercase tracking-wider px-2.5 py-1 rounded-full ${colors.bg} ${colors.text} font-semibold border ${colors.border}`}>
                                             {node.group}
                                         </span>
@@ -189,8 +212,8 @@ export default function FoodIndex() {
                                                         <TrendingDown className="w-5 h-5 text-blue-400 flex-shrink-0" />
                                                     )}
                                                     <div className="flex-1 min-w-0">
-                                                        <span className="font-medium text-white/85 text-base">{c.biomarker.label}</span>
-                                                        <span className="text-white/35 text-sm ml-2">{c.biomarker.group}</span>
+                                                        <p className="font-medium text-white/85 text-base truncate">{c.biomarker.label}</p>
+                                                        <p className="text-white/35 text-sm truncate">{c.biomarker.group}</p>
                                                     </div>
                                                     <span className={`text-xs font-bold px-2 py-1 rounded flex-shrink-0 ${c.strength === 'high' ? 'bg-green-500/20 text-green-400' :
                                                             c.strength === 'medium' ? 'bg-yellow-500/20 text-yellow-400' :
