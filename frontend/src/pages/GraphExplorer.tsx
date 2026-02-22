@@ -501,11 +501,11 @@ export default function GraphExplorer() {
                                 Show All Categories
                             </button>
 
-                            <div className="mt-3 min-h-0 flex-1 overflow-y-auto hide-scrollbar pr-1 space-y-2.5">
+                            <div className="mt-3 min-h-0 flex-1 overflow-y-auto pr-1 space-y-2.5">
                                 {(filterType === 'all' || filterType === 'food') && (
                                     <div className="space-y-1.5">
                                         <p className="text-xs uppercase tracking-[0.12em] text-blue-200/80 font-semibold px-1">Food Groups</p>
-                                        <div className="max-h-48 overflow-y-auto hide-scrollbar pr-1 space-y-1.5">
+                                        <div className="panel-scrollable rounded-lg border border-white/10 bg-black/10 p-1.5 space-y-1.5">
                                             {filteredFoodGroups.map(g => (
                                                 <button
                                                     key={g}
@@ -526,7 +526,7 @@ export default function GraphExplorer() {
                                 {(filterType === 'all' || filterType === 'biomarker') && (
                                     <div className="space-y-1.5">
                                         <p className="text-xs uppercase tracking-[0.12em] text-rose-200/80 font-semibold px-1">Biomarker Groups</p>
-                                        <div className="max-h-48 overflow-y-auto hide-scrollbar pr-1 space-y-1.5">
+                                        <div className="panel-scrollable rounded-lg border border-white/10 bg-black/10 p-1.5 space-y-1.5">
                                             {filteredBioGroups.map(g => (
                                                 <button
                                                     key={g}

@@ -213,3 +213,12 @@ textarea {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.panel-scrollable {
+  max-height: 13rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  scrollbar-gutter: stable;
+}
