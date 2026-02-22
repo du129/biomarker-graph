@@ -595,6 +595,7 @@ export default function GraphExplorer() {
                 onClose={() => { setSelectedNode(null); setTimeout(() => graphRef.current?.zoomToFit(600, 60), 50); }}
                 onSearch={handleSearch}
                 graphData={data}
+                leftPanelCollapsed={controlsCollapsed}
             />
 
             {/* ── Graph canvas ───────────────────────────────── */}
